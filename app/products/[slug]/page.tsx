@@ -35,7 +35,7 @@ export default async function ProductDetail({ params }: { params: { slug: string
   const questionProductsDocs = (await TaskModel.find({ product: product._id }, "-reviews"))
   const questionProducts = JSON.parse(JSON.stringify(questionProductsDocs));
 
-  const discountPrice = (product.price - (product.price * (product.discount / 100)))
+  const discountPrice = (product.price - (product.price * (product.discount / 100))).toFixed(2)
 
   const videoCounter = product?.video?.length || 0;
   const imageCounter = product?.image?.length || 0;
@@ -121,7 +121,7 @@ export default async function ProductDetail({ params }: { params: { slug: string
                 &nbsp;
                 <h4 className="text-[28px] pl-2">
                   <span className="text-[13px] align-middle">$</span>
-                  {discountPrice.toFixed(2)}
+                  {discountPrice}
                 </h4>
               </div>
               <div className="flex">
@@ -164,7 +164,7 @@ export default async function ProductDetail({ params }: { params: { slug: string
                 <h4 className="text-[28px] pl-2">
                   <span className=" text-[18px] align-middle">Price: </span>
                   <span className="text-[13px] align-middle"> $</span>
-                  {discountPrice.toFixed(2)}
+                  {discountPrice}
                 </h4>
               </div>
             </>
@@ -184,7 +184,7 @@ export default async function ProductDetail({ params }: { params: { slug: string
             <h4 className="text-[18px] text-[#007600] font-normal my-2">
               In stock
             </h4><br />
-            <AddToCart product={product} discountPrice={discountPrice} />
+            <AddToCart product={product} discountPrice={parseInt(discountPrice)} />
             <button className="w-full bg-[#FA8900] p-2 rounded-[25px] text-neutral font-bold
             cursor-pointer mb-2 hover:opacity-75">
               Buy Now
