@@ -35,7 +35,7 @@ export default async function ProductDetail({ params }: { params: { slug: string
   const questionProductsDocs = (await TaskModel.find({ product: product._id }, "-reviews"))
   const questionProducts = JSON.parse(JSON.stringify(questionProductsDocs));
 
-  const discountPrice = (product.price - (product.price * (product.discount / 100))).toFixed(2)
+  const discountPrice = (product.price - (product.price * (product.discount / 100)))
 
   const videoCounter = product?.video?.length || 0;
   const imageCounter = product?.image?.length || 0;
@@ -95,7 +95,7 @@ export default async function ProductDetail({ params }: { params: { slug: string
           <div className="flex flex-wrap items-center space-x-2 mb-2  border-b-2 ">
             <div className="my-2">
               <div className="flex">
-              <span className="mx-1">{product?.rating?.toFixed(2) ?? 'N/A'}</span>
+              <span className="mx-1">{product?.rating}</span>
 
                 <Rating value={product.rating} />
               </div>
@@ -184,7 +184,7 @@ export default async function ProductDetail({ params }: { params: { slug: string
             <h4 className="text-[18px] text-[#007600] font-normal my-2">
               In stock
             </h4><br />
-            <AddToCart product={product} discountPrice={parseInt(discountPrice)} />
+            <AddToCart product={product} discountPrice={discountPrice} />
             <button className="w-full bg-[#FA8900] p-2 rounded-[25px] text-neutral font-bold
             cursor-pointer mb-2 hover:opacity-75">
               Buy Now
@@ -256,7 +256,7 @@ export default async function ProductDetail({ params }: { params: { slug: string
           <div className=" grid-cols-1 block mx-5 ">
             <div className="flex">
               <Rating value={product.rating} />
-              <h1 className="px-2">{product.rating ? product.rating.toFixed(2) + ' out of 5' : 'Rating not available'}</h1>
+              <h1 className="px-2">{product.rating ? product.rating + ' out of 5' : 'Rating not available'}</h1>
 
             </div>
             <h2>{product.numReviews} global ratings</h2>
