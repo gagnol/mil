@@ -58,7 +58,7 @@ const initialState: State = {
   productData: [],
   favoriteData: [],
   allProducts: [],
-  userInfo: null,
+  userInfo: [],
   countryData: [5, "USA", 0, 0],
 };
 

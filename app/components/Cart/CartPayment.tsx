@@ -5,7 +5,6 @@ import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { checkoutOrder, createOrder } from '@/lib/order-actions';
 import { useEffect } from "react";
-import toast from "react-hot-toast";
 import Link from "next/link";
 
 interface CartItem {
@@ -55,13 +54,13 @@ const stripePromise = loadStripe(
 const { data: session } = useSession();
 
 useEffect(() => {
-  if (!session) {
+  if (!session || !session.user) {
     router.push('/signin');
   }
   if(!userInfo){
     router.push('/signin');
   }
-  if (userInfo.user.address === "") {
+  if (userInfo.user?.address === "") {
    
     router.push('/profile')
   }

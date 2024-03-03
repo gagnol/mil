@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 import CartProduct from "@/app/components/Cart/CartProduct";
 import ResetCart from "@/app/components/Cart/ResetCart";
@@ -9,7 +9,7 @@ import CartPayment from "@/app/components/Cart/CartPayment";
 
 
 const CartPage = () => {
-  const { productData, userInfo } = useSelector((state: any) => state.next);
+  const { productData} = useSelector((state: any) => state.next);
 
   return (
     <div className="max-w-screen-2xl mx-auto px-6 grid md:grid-cols-2 xl:grid-cols-5 gap-2 py-4">
