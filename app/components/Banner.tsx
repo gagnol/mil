@@ -19,10 +19,10 @@ const Banner = () => {
           <Image priority src="/slide_15.jpg" alt="sliderImg" width={1500} height={600} />
         </div>
         <div>
-        <Link href={`/product/512`} >
+       
           <Image  priority src="/slide_11.jpg" alt="sliderImg" width={1500} height={600} 
             className="hover:cursor-pointer"/>
-          </Link>
+   
         </div>
         <div>
         <Image  priority src="/slide_12.jpg" alt="sliderImg" width={1500} height={600} />

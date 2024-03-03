@@ -15,7 +15,7 @@ const CountryTaxes = ({ discountPrice }: any) => {
                  
             <div className="group border border-transparent flex hover:cursor-pointer ">
             <h4 className="text-neutral-300 text-[14px] my-2 flex ">
-                ${importTotalFees.toFixed(2)} Shipping & Import Fees Deposit to {countryData[0].country}
+                ${importTotalFees} Shipping & Import Fees Deposit to {countryData[0].country}
             </h4>
             <span className="py-3 text-primary flex ">Details <FaCaretDown/></span>
                 <span className="absolute w-[300px] h-[170px] rounded-sm hidden
@@ -27,13 +27,13 @@ const CountryTaxes = ({ discountPrice }: any) => {
                                 Shipping & Fee Details
                             </h4>
                             <li className="nav_text">Price
-                                <span className='float-right'>${discountPrice.toFixed(2)}</span></li>
+                                <span className='float-right'>${discountPrice}</span></li>
                             <li className="nav_text">Amazon Global Shipping
-                                <span className='float-right'>${countryData[0].shipping.toFixed(2)}</span></li>
+                                <span className='float-right'>${countryData[0].shipping}</span></li>
                             <li className="nav_text border-b" >Estimated Import Fees Deposit
-                                <span className='float-right'>${importFees.toFixed(2)}</span></li>
+                                <span className='float-right'>${importFees}</span></li>
                             <h4 className='font-bold text-[14px] pt-2 text-neutral-200'>Total
-                                <span className='float-right'>${(totalPrice).toFixed(2)}</span>
+                                <span className='float-right'>${(totalPrice)}</span>
                             </h4>
                         </ul>
                     </div>
