@@ -103,17 +103,17 @@ const onCheckout = async () => {
           productData.reduce((a: number, c: CartItem) => a + c.quantity, 0)
         )}{" "}
         items)
-        <span className="font-bold text-xl">${subTotal.toFixed(2)}</span>
+        <span className="font-bold text-xl">${subTotal}</span>
       </p>
       <p>
-        Shipping:<span className="float-right pr-1">${shipping.toFixed(2)}</span>
+        Shipping:<span className="float-right pr-1">${shipping}</span>
       </p>
       <p>
-        Import Fees:<span className="float-right pr-1">${importFees.toFixed(2)}</span>
+        Import Fees:<span className="float-right pr-1">${importFees}</span>
       </p>
       <p className="flex items-center justify-between px-1 font-semibold border-t">
         Total:{" "}
-        <span className="font-bold text-xl pt-1">${totalAmount.toFixed(2)}</span>
+        <span className="font-bold text-xl pt-1">${Math.ceil(totalAmount)}</span>
       </p>
       <div className="flex flex-col items-center">
       <form action={onCheckout} method="post">
