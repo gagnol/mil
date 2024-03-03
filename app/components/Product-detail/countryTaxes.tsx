@@ -6,9 +6,9 @@ import { useSelector } from 'react-redux';
 
 const CountryTaxes = ({ discountPrice }: any) => {
     const { countryData } = useSelector((state: any) => state.next);
-    const importFees = (discountPrice * (countryData[0].importFees / 100))
-    const importTotalFees = importFees + countryData[0].shipping
-    const totalPrice = discountPrice + countryData[0].shipping + importFees
+    const importFees = Math.ceil(discountPrice * (countryData[0].importFees / 100))
+    const importTotalFees = Math.ceil(importFees + countryData[0].shipping)
+    const totalPrice = Math.ceil(discountPrice + countryData[0].shipping + importFees)
 
     return (
         <>
@@ -29,7 +29,7 @@ const CountryTaxes = ({ discountPrice }: any) => {
                             <li className="nav_text">Price
                                 <span className='float-right'>${discountPrice}</span></li>
                             <li className="nav_text">Amazon Global Shipping
-                                <span className='float-right'>${countryData[0].shipping}</span></li>
+                                <span className='float-right'>${Math.ceil(countryData[0].shipping)}</span></li>
                             <li className="nav_text border-b" >Estimated Import Fees Deposit
                                 <span className='float-right'>${importFees}</span></li>
                             <h4 className='font-bold text-[14px] pt-2 text-neutral-200'>Total
