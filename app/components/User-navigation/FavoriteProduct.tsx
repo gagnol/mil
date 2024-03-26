@@ -2,7 +2,6 @@
 import Image from "next/image";
 import React from "react";
 import { useDispatch } from "react-redux";
-import { addCart, resetFavorite } from "@/store/nextSlice";
 import Link from "next/link";
 
 const FavoriteProduct = ({ item }: any) => {

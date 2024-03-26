@@ -6,7 +6,6 @@ interface LoadingProps {
     children: ReactNode;
   }
 
-
 const Loading: React.FC<LoadingProps> = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
 

@@ -12,12 +12,12 @@ const CountryTaxes = ({ discountPrice }: any) => {
 
     return (
         <>
-                 
+
             <div className="group border border-transparent flex hover:cursor-pointer ">
-            <h4 className="text-neutral-300 text-[14px] my-2 flex ">
-                ${importTotalFees} Shipping & Import Fees Deposit to {countryData[0].country}
-            </h4>
-            <span className="py-3 text-primary flex ">Details <FaCaretDown/></span>
+                <h4 className="text-neutral-300 text-[14px] my-2 flex ">
+                    ${importTotalFees} Shipping & Import Fees Deposit to {countryData[0].country}
+                </h4>
+                <span className="py-3 text-primary flex ">Details <FaCaretDown /></span>
                 <span className="absolute w-[300px] h-[170px] rounded-sm hidden
                         bg-neutral-600 border-[1px] text-neutral top-[220px] right-11
                         border-[#777] z-[1]  group-hover:block ">
@@ -38,12 +38,12 @@ const CountryTaxes = ({ discountPrice }: any) => {
                         </ul>
                     </div>
                 </span>
-                         <br/>
-                    </div>
-                    <h4 className="flex text-[14px] text-primary my-1 ">
-                    <SlLocationPin color='#949494' fontSize={16} />
-                    &thinsp;Deliver to {countryData[0].country}
-                </h4>
+                <br />
+            </div>
+            <h4 className="flex text-[14px] text-primary my-1 ">
+                <SlLocationPin color='#949494' fontSize={16} />
+                &thinsp;Deliver to {countryData[0].country}
+            </h4>
         </>
     )
 }
