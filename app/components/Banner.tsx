@@ -2,7 +2,7 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
-import Link from "next/link";
+
 
 const Banner = () => {
   return (
@@ -25,13 +25,13 @@ const Banner = () => {
    
         </div>
         <div>
-        <Image  priority src="/slide_12.jpg" alt="sliderImg" width={1500} height={600} />
+        <Image  priority src="/slide_14.png" alt="sliderImg" width={1500} height={600} />
         </div>
         <div>
         <Image  priority src="/slide_13.jpg" alt="sliderImg" width={1500} height={600} />
         </div>
         <div>
-        <Image  priority src="/slide_14.jpg" alt="sliderImg" width={1500} height={600} />
+        <Image  priority src="/slide_14.png" alt="sliderImg" width={1500} height={600} />
         </div>
       </Carousel>
       

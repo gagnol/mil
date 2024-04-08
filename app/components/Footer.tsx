@@ -52,9 +52,9 @@ const Footer = () => {
                             <Link href='/'>
                                 <Image
                                     alt='logo'
-                                    width={76}
-                                    height={24}
-                                    style={{ width: 88, height: "auto" }}
+                                    width={176}
+                                    height={44}
+                                    style={{ width: 176, height: "auto" }}
                                     src='/logo.png'
                                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                             </Link>
@@ -65,10 +65,10 @@ const Footer = () => {
                             <span className='block pl-5' >
                                 <i className='text-[8px]' ><FaCaretUp color='#888' /></i>
                                 <i className='text-[8px]' ><FaCaretDown color='#888' /></i>
-                            </span>
+                            </span> 
                         </li>
                         <li className='footer_logo leading-8 '>
-                            <Image alt='logo' width={18} height={12}
+                            <Image alt='flag' width={18} height={12}
                                 style={{ width: 23, height: "auto" }}
                                 src='https://sp-bootstrap.global.ssl.fastly.net/8.0.0/images/flags/us.svg' />
                             United States

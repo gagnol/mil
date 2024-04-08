@@ -5,7 +5,7 @@ import Link from "next/link";
 import SearchInput from "./SearchInput";
 import SigninTool from "./SigninTool";
 import FavoriteList from "./FavoriteList";
-import CartTool from "./CartTool";
+
 import All from "./All";
 import CountryLocation from "./CountryLocation";
 import { getServerSession } from "next-auth";
@@ -24,9 +24,9 @@ const Navbar = async () => {
           href={"/"}
           className="px-2 border border-transparent hover:border-white cursor-pointer
                     duration-300 flex items-center justify-center h-[70%]">
-          <Image className="w-28 object-cover h-[auto] mt-1"
-            src="/logo.png" alt="logo" width={174} height={34}
-            style={{ width: 100, height: "auto" }}
+          <Image className="min-h-[74px] object-cover  mt-1"
+            src="/logo.png" alt="logo" width={174} height={74}
+             style={{ width: 174, height: "auto" }}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
         </Link>
        <CountryLocation id={5} country={"USA"} shipping={0} importFees={0} />
@@ -39,7 +39,7 @@ const Navbar = async () => {
         </div>
         <SigninTool />
         <FavoriteList />
-        <CartTool />
+      
         {/* Theme */}
         <div className="flex gap-2">
           <label className="flex cursor-pointer gap-2">

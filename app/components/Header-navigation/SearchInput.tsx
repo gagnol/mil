@@ -36,12 +36,12 @@ const SearchInput: React.FC<{ placeholder: string, product: any }> = ({ placehol
         value={searchQuery}
         className="w-full h-full px-2 placeholder:text-sm text-base
          border-[3px] border-transparent outline-none
-         focus-visible:border-[#febd69]"
+         focus-visible:border-[#58abb3]"
         type="text"
         name="sarch"
         placeholder="Search products"
       />
-      <span className="w-12 h-full bg-[#febd69] text-black 
+      <span className="w-12 h-full bg-[#58abb3] text-black 
       text-2xl flex items-center justify-center right-0 rounded-tr-md rounded-br-md">
         <HiOutlineSearch />
       </span>

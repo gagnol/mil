@@ -12,10 +12,9 @@ export default function ProductItem({ product }) {
           <Image
             src={product.image[0]}
             alt={product.name}
-            width={200  }
+            width={200}
             height={200}
             className="w-64 h-64 my-5 max-h-64 min-h-64 max-w-64 min-w-64"
-            
           />
         </Link>
       </figure>
