@@ -10,285 +10,41 @@ export const NavLinks = [
 
 export const footerLinks = [
   {
-    title: 'Get to Know Us',
+    title: 'About Us',
     links: [
       'Careers',
-      'About Amazon',
-      'Investor Relations',
-      'Amazon Devices',
+      'About us',
+      'Products',
+
     ],
   },
   {
-    title: 'Make Money with Us',
+    title: 'Got Content?',
     links: [
-      'Sell on Amazon',
-      'Sell on Amazon Business',
-      'Sell Your Apps on Amazon',
-      'Advertise Your Products',
-      'Self-Publish with Us',
-      'Become an Amazon Vendor',
-      'Sell Your Subscription on Amazon',
-      'See all',
+      'Watch on Legendary',
+      'Originals',
+      'TV Line up'      
     ],
   },
   {
-    title: 'Amazon Payment Products',
+    title: 'Advertise',
     links: [
-      'Amazon Rewards Visa Signature Cards',
-      'Amazon.com Store Card',
-      'Amazon.com Corporate Credit Line',
-      'Shop with Points',
-      'Credit Card Marketplace',
-      'Reload Your Balance',
-      'Amazon Currency Converter',
+      'Rewards ',
+      'Store Card',
+      'Corporate Credit Line',
+      
     ],
   },
   {
     title: 'Let Us Help You',
     links: [
       'Your Account',
-      'Your Orders',
-      'Shipping Rates & Policies',
-      'Amazon Prime',
-      'Returns & Replacements',
-      'Manage Your Content and Devices',
-      'Amazon Assistant',
-      'Privacy policy',
+      'Assistant',
       'Help',
     ],
   },
-   {
-    title: 'Amazon Music',
-    links: [
-      'Stream millions of songs',
-    ],
-  },
-  {
-    title: 'AmazonFresh',
-    links: [
-      'Groceries & More Right To Your Door',
-    ],
-  },
-  {
-    title: 'Amazon Web Services',
-    links: [
-      'Scalable Cloud',
-      ' Computing Services',
-    ],
-  }, 
-  {
-    title: 'East Dane',
-    links: [
-      'Designer Men s',
-      'Fashion',
-    ],
-  }, 
-  {
-    title: 'Prime Now',
-    links: [
-      'FREE 2-Hour Delivery on Everyday Items',
-    ],
-  }, 
-  {
-    title: 'Amazon Drive',
-    links: [
-      'Cloud storage from Amazon',
-    ],
-  }, 
-  {
-    title: 'Amazon Global',
-    links: [
-      'Ship Orders Internationally',
-    ],
-  }, 
-  {
-    title: 'Audible',
-    links: [
-      'Download Audio Books',
-    ],
-  }, 
-  {
-    title: 'Fabric',
-    links: [
-      'Sewing, Quilting, Knitting',
-    ],
-  }, 
-  {
-    title: 'Prime Photos',
-    links: [
-      'Unlimited Photo Storage Free With Prime',
-    ],
-  }, 
-  {
-    title: 'Woot!',
-    links: [
-      'Deals and Shenanigans',
-    ],
-  }, 
-  {
-    title: 'Alexa',
-    links: [
-      'Actionable Analytics for the Web',
-    ],
-  }, 
-  {
-    title: 'Amazon Restaurants',
-    links: [
-      'Food delivery from local restaurants',
-    ],
-  }, 
-  {
-    title: 'CreateSpace',
-    links: [
-      'Indie Print Publishing Made Easy',
-    ],
-  }, 
-  {
-    title: 'Whispercast',
-    links: [
-      'Discover Distribute Digital Content',
-    ],
-  }, 
-  {
-    title: 'Amazon Business',
-    links: [
-      'Everything For Your Business',
-    ],
-  }, 
-  {
-    title: 'Amazon Video Direct',
-    links: [
-      'Video Distribution Made Easy',
-    ],
-  }, 
-  {
-    title: 'DPReview',
-    links: [
-      'Photography',
-    ],
-  }, 
-  {
-    title: 'Kindle Direct Publishing',
-    links: [
-      'Digital Publishing Made Easy',
-    ],
-  }, 
-  {
-    title: 'Withoutabox',
-    links: [
-      'Submit to Film Festivals',
-    ],
-  }, 
-  {
-    title: 'ACX',
-    links: [
-      'Audiobook ',
-      'Publishing',
-      'Made Easy'
-    ],
-  },
-  {
-    title: 'Amazon Ignite',
-    links: [
-      'Sell your original ',
-      'Digital Educational',
-      'Resources'
-    ],
-  },
-  {
-    title: 'Amazon Renewed',
-    links: [
-      'Like-new products ',
-      
-    ],
-  },
-  {
-    title: 'Ring',
-    links: [
-      'Smart Home ',
-      'Security Systems'
-      
-    ],
-  },
-  {
-    title: 'PillPack',
-    links: [
-      'Pharmacy Simplified ',
-            
-    ],
-  },
-  {
-    title: 'Amazon Subscription Boxes',
-    links: [
-      'Top subscription boxes right to your door',
-    ],
-  },
-  {
-    title: 'Neighbors App',
-    links: [
-      'Real-Time Crime & Safety Alerts',
-    ],
-  },
-  {
-    title: 'Blink',
-    links: [
-      'Smart Security for Every Home',
-    ],
-  },
-  {
-    title: 'eero WiFi',
-    links: [
-      'Stream 4K Video in Every Room',
-    ],
-  },
-  {
-    title: 'Home Services',
-    links: [
-      'Experienced Pros Happiness Guarantee',
-    ],
-  },
-  {
-    title: 'ComiXology',
-    links: [
-      'Thousands of  Digital Comics',
-    ],
-  },
-  {
-    title: 'Box Office Mojo',
-    links: [
-      'Find Movie Box Office Data',
-    ],
-  },
-
-  {
-    title: 'IMDb',
-    links: [
-      'Movies, TV & Celebrities',
-    ],
-  },
-  {
-    title: 'IMDbPro',
-    links: [
-      'Get Info Entertainment Professionals Need	',
-    ],
-  },
-  {
-    title: 'Goodreads',
-    links: [
-      'Book reviews & recommendations',
-    ],
-  },
-  {
-    title: 'Shopbop',
-    links: [
-      'Designer',
-      'Fasihon Brands'
-    ],
-  },
-
-
-];
-
+]
+   
 
 export const singleImage1="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_Pets_1X._SY304_CB639746743_.jpg"
 export const singleImage2="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2022/February/DashboardCards/GW_CONS_AUS_HPC_HPCEssentials_CatCard_Desktop1x._SY304_CB627424361_.jpg"

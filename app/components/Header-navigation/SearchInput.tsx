@@ -35,7 +35,7 @@ const SearchInput: React.FC<{ placeholder: string, product: any }> = ({ placehol
         onChange={handleSearch}
         value={searchQuery}
         className="w-full h-full px-2 placeholder:text-sm text-base
-         border-[3px] border-transparent outline-none
+         border-[3px] border-transparent outline-none hidden xl:block
          focus-visible:border-[#58abb3]"
         type="text"
         name="sarch"

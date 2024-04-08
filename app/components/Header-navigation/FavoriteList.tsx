@@ -14,7 +14,7 @@ function FavoriteList() {
      {/* fovorite */}
      <Link
           href={"/favorite"}
-          className="text-xs text-gray-100 flex 
+          className="text-xs text-gray-100 hidden xl:flex 
           flex-col justify-center p-3 border border-transparent
            hover:border-white cursor-pointer duration-300 h-[70%] relative"
         >

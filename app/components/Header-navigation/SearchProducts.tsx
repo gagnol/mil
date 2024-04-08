@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const SearchProducts = ({ item }:any) => {
   return (
-    <div className="flex items-center gap-4 z-30 bg-neutral-content p-2">
+    <div className="hidden xl:flex items-center gap-4 z-30 bg-neutral-content p-2">
       <Image className="w-24 max-h-[100px] min-h-[100px]" src={item.image[0]} alt="productImage" width={100} height={100} />
       <div>
         <p className="text-xs -mb-1">

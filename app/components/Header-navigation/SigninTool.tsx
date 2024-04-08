@@ -36,7 +36,7 @@ function SigninTool() {
             {session?.user ? (
                 <>
                     <div
-                        className="group text-xs text-gray-100 flex flex-col justify-center 
+                        className="group text-xs text-gray-100 hidden xl:flex flex-col justify-center 
                     px-2 border border-transparent hover:border-white cursor-pointer
                     overflow-x-hidden
                     duration-300 h-[70%]">
@@ -104,7 +104,7 @@ function SigninTool() {
                 </>
             ) : (
                 <>
-                    <div className="group flex items-center px-2 border border-transparent
+                    <div className="group hidden xl:flex items-center px-2 border border-transparent
                     hover:border-white cursor-pointer duration-300 h-[70%] " >
                         <div className='block'>
                             <p className='text-[12px]'>Hello,&nbsp;Sign in </p>
