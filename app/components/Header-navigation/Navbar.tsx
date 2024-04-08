@@ -5,9 +5,7 @@ import Link from "next/link";
 import SearchInput from "./SearchInput";
 import SigninTool from "./SigninTool";
 import FavoriteList from "./FavoriteList";
-
 import All from "./All";
-import CountryLocation from "./CountryLocation";
 import { getServerSession } from "next-auth";
 
 const Navbar = async () => {
@@ -29,7 +27,7 @@ const Navbar = async () => {
              style={{ width: 174, height: "auto" }}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
         </Link>
-       <CountryLocation id={5} country={"USA"} shipping={0} importFees={0} />
+     
        
         {/* search */}
         <div className="flex-1 h-10 hidden md:inline-flex items-center justify-between relative">
