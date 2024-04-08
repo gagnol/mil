@@ -25,8 +25,8 @@ const SideBar = () => {
         <>
             <button onClick={() => setOpen(true)}>
                 <p className="flex items-center gap-1 h-8 px-2 border border-transparent
-                 hover:border-white cursor-pointer duration-300" >
-                    <LuMenu className="text-xl" /> All
+                text-white  hover:border-white cursor-pointer duration-300" >
+                    <LuMenu className="text-xl text-white" /> All
                 </p>
             </button>
             <div className='py-3 top-0 left-0 right-0 shadow-md z-30 '>

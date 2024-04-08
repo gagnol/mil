@@ -31,15 +31,16 @@ body {
 }
 
 .footer_middle {
-  @apply grid xl:grid-cols-4 grid-cols-2 gap-10 py-8 mx-auto justify-center text-center items-center
+  @apply text-white grid xl:grid-cols-4 grid-cols-2 gap-10 py-8 mx-auto 
+  justify-center text-center items-center
 }
 
 .footer_bottom {
-  @apply flex flex-wrap p-2 px-8 w-full gap-2
+  @apply text-white flex flex-wrap p-2 px-8 w-full gap-2
 }
 
 .footer_ul {
-  @apply flex flex-col align-top
+  @apply text-white flex flex-col align-top
 }
 
 .footer_logo {
@@ -47,11 +48,11 @@ body {
 }
 
 .footer_copyright {
-  @apply flex-col w-full text-sm font-normal;
+  @apply text-white flex-col w-full text-sm font-normal;
 }
 
 .footer_column {
-  @apply flex-1 flex flex-col gap-3 text-sm min-w-max;
+  @apply text-white flex-1 flex flex-col gap-3 text-sm min-w-max;
 }
 
 /* Card */
@@ -61,7 +62,7 @@ body {
 }
 
 .card_headline {
-  @apply text-xl  pl-[17px] pt-2 font-semibold leading-normal;
+  @apply text-xl  pl-[17px] pt-2 font-semibold leading-normal text-white;
 }
 
 /* Forms pages */

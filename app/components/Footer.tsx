@@ -57,11 +57,11 @@ const Footer = () => {
                          text-center gap-8 text-[#5e514b] text-2xl">
                             <Link href="/"
                              className='cursor-pointer hover:text-[#5e514b]'>
-                            <FaFacebookF className='text-[#58abb3]'/>
+                            <FaFacebookF className='text-[#58abb3] hover:text-[#5e514b]'/>
                             </Link>
-                            <BsTwitter className='text-[#58abb3]'/>
-                            <BsPinterest className='text-[#58abb3]'/>
-                            <FaLinkedinIn className='text-[#58abb3]'/>
+                            <BsTwitter className='text-[#58abb3] hover:text-[#5e514b]'/>
+                            <BsPinterest className='text-[#58abb3] hover:text-[#5e514b]'/>
+                            <FaLinkedinIn className='text-[#58abb3] hover:text-[#5e514b]'/>
                         </div>
                     </div>
                 </div>

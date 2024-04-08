@@ -40,9 +40,9 @@ function Slider({ products }:any) {
                                 </Link>
                                 <div className="flex flex-col justify-start p-2 overflow-hidden
                                 text-[14px] text-neutral-content ">
-                                    <p className="font-semibold">{item.name.substring(0, 20)}...</p>
+                                    <p className="font-semibold text-white">{item.name.substring(0, 20)}...</p>
                                     <Rating value={item.rating} />
-                                    <p className="text-neutral-content">${item.price}</p>
+                                    <p className="text-white">${item.price}</p>
                                 </div>
                             </div>
                     ))}

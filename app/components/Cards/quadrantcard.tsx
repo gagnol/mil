@@ -26,7 +26,7 @@ const Cuadcard = (props: { headline: string | number | boolean | React.ReactElem
             className='max-h-[119px] min-h-[119px] relative'
           />
         </Link>
-        <span className="text-[14px]">{props.subcategory[0]}</span>
+        <span className="text-[14px] text-white">{props.subcategory[0]}</span>
         </div>
         </div>
         </div>
@@ -44,7 +44,7 @@ const Cuadcard = (props: { headline: string | number | boolean | React.ReactElem
             className='max-h-[119px] min-h-[119px] relative'
           />
         </Link>
-        <span className="text-[14px]">{props.subcategory[1]}</span>
+        <span className="text-[14px] text-white">{props.subcategory[1]}</span>
         </div>
         </div>
         </div>
@@ -62,7 +62,7 @@ const Cuadcard = (props: { headline: string | number | boolean | React.ReactElem
             className='max-h-[119px] min-h-[119px] relative'
           />
         </Link>
-        <span className="text-[14px]">{props.subcategory[2]}</span>
+        <span className="text-[14px] text-white">{props.subcategory[2]}</span>
         </div>
         </div>
         </div>
@@ -80,7 +80,7 @@ const Cuadcard = (props: { headline: string | number | boolean | React.ReactElem
             className='max-h-[119px] min-h-[119px]  relative'
           />
         </Link>
-        <span className="text-[14px]">{props.subcategory[3]}</span>
+        <span className="text-[14px] text-white">{props.subcategory[3]}</span>
         </div>
         </div>
         </div>

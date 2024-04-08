@@ -135,7 +135,7 @@ export default async function Home() {
         </div>
       </div>
 
-      <div className="w-[100%] bg-neutral p-4 h-[150px] " >
+      <div className="w-[100%] p-4 h-[150px] " >
         <div className="text-center text-[14px] my-[19px] px-5 mx-auto" >
           <div className=" my-2 block justify-center" >
             <Link href="/signin" >
@@ -146,7 +146,7 @@ export default async function Home() {
               </button>
             </Link>
           </div>
-          <div >New customer?&nbsp;
+          <div className="text-white">New customer?&nbsp;
             <Link href="/register" ><span className="text-primary">Start here.</span></Link>
           </div>
 

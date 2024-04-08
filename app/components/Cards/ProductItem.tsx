@@ -21,7 +21,7 @@ export default function ProductItem({ product }: { product: Product }) {
       </figure>
       <div className="card-body">
         <Link href={`/products/${product.slug}`}>
-          <h2 className="font-normal">{product.name.substring(0,100)}</h2>
+          <h2 className="font-normal text-white">{product.name.substring(0,100)}</h2>
         </Link>
         <Rating value={product.rating}  />
         <p className="mb-2">{product.brand}</p>
