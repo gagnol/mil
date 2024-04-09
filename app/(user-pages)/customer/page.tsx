@@ -29,7 +29,7 @@ async function customer() {
             <div className="page-wrapper hero-banner">
                 <div className="px-10">
                     <h1 className="text-2xl font-bold"  >
-                        Welcome to Amazon Customer Service, {session?.user?.name || ""}</h1>
+                        Welcome to Milproveedores Customer Service, {session?.user?.name || ""}</h1>
                     <p className="header-subtext subtext-container">
                         What would you like help with today?
                         You can quickly take care of most things here,
@@ -52,7 +52,7 @@ async function customer() {
                                     <Image width={120} height={120} src="https://m.media-amazon.com/images/G/01/x-locale/cs/help/images/gateway/self-service/fshub/fshub_device_v2.png" alt="" />
                                 </div>
                                 <div className="center flex mx-2 my-auto-detail"><div className="flex mx-2 my-auto-title full">
-                                    Kindle, Fire, Alexa or other Amazon devices
+                                    Kindle, Fire, Alexa or other Milproveedores devices
                                 </div></div></div></div>
                         <div className="flex  p-[12px] rounded-md bg-neutral-800">
                             <div className="flex mx-2 my-auto" role="button" >
@@ -172,7 +172,7 @@ async function customer() {
                                 </li>
                                 <li className="min-h-[40px]  min-w-[227px] rounded-md flex relative">
 
-                                    <label >Amazon Business Accounts </label>
+                                    <label >Milproveedores Business Accounts </label>
                                 </li>
                                 <li className="min-h-[40px]  min-w-[227px] rounded-md flex relative">
 
@@ -223,7 +223,7 @@ async function customer() {
                                 <div className="" role="button" >
                                     <div className="">
                                         <div className="font-bold text-lg">
-                                            Amazon Prime
+                                            Milproveedores Prime
                                         </div>
                                         <div className="text-[14px]">
                                             Get detailed information on all Prime benefits.
@@ -232,7 +232,7 @@ async function customer() {
                                 <div className="" role="button" >
                                     <div className="">
                                         <div className="font-bold text-lg">
-                                            End Your Amazon Prime Membership
+                                            End Your Milproveedores Prime Membership
                                         </div>
                                         <div className="text-[14px]">
                                             Cancel your membership easily via this page.

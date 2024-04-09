@@ -113,18 +113,7 @@ const Sidebar = async () => {
           </li>
         ))}
       </ul>
-      <form
-        action={async () => {
-          "use server";
-          await signOut();
-        }}
-      >
-        <button className="btn btn-primary btn-outline">
-          <MdLogout />
-          Logout
-        </button>
-      </form>
-    </div>
+      </div>
   );
 };
 

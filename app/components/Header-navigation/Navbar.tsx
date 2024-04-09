@@ -7,6 +7,7 @@ import SigninTool from "./SigninTool";
 import FavoriteList from "./FavoriteList";
 import All from "./All";
 import { getServerSession } from "next-auth";
+import CartTool from "./CartTool";
 
 const Navbar = async () => {
   const session = await getServerSession();
@@ -37,7 +38,7 @@ const Navbar = async () => {
         </div>
         <SigninTool />
         <FavoriteList />
-      
+          <CartTool/>
         {/* Theme */}
         <div className="hidden xl:flex gap-2">
           <label className="flex cursor-pointer gap-2">

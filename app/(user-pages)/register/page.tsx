@@ -71,7 +71,7 @@ function Signup() {
           </button>
         </form>
         <br />
-        <div className='a_label'>By continuing, you agree to Amazon&apos;s
+        <div className='a_label'>By continuing, you agree to Milproveedores&apos;s
           <a className='text-[#0066c0]'> Conditions of Use </a>and<a className='text-[#0066c0]'> Privacy Notice</a>
         </div>
         <br />

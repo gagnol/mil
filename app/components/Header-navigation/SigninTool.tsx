@@ -10,10 +10,8 @@ import { useRouter } from 'next/navigation'
 
 function SigninTool() {
     const { data: session } = useSession();
-
-
     const dispatch = useDispatch();
-    const router = useRouter();
+   
     useEffect(() => {
         if (session) {
             dispatch(
@@ -25,11 +23,18 @@ function SigninTool() {
         }
     }, [dispatch, session]);
 
+    const router = useRouter();
 
     const handleSignOutClick: React.MouseEventHandler<HTMLLIElement> = (event) => {
-
-        removeUser()
-        signOut({redirect:false})
+           
+        // Redirect to "/" before signing out
+        router.push('/');
+    
+        // Wait for 2 seconds before executing signOut
+        setTimeout(() => {
+            removeUser();
+            signOut({ redirect: false });
+        }, 2000);
     };
     return (
         <>

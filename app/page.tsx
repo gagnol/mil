@@ -93,10 +93,10 @@ export default async function Home() {
               subcategory={["Computers", " Video Games", "Baby", "Toys & Games"]} />
           </div>
           <div className="relative bg-neutral mb-4 pb-2 max-w-screen-2xl mx-6">
-            <h2 className="text-[21px] pl-9 font-semibold pt-1">
+            <h2 className="text-[21px] pl-9 font-semibold pt-1 text-white">
               Best sellers
             </h2>
-            <Slider products={bestSeller} />
+            <Slider products={bestSeller}/>
           </div>
           <div className="hidden md:block justify-center items-center px-60 py-1 mb-5">
             <Link href={`/products/557`} >

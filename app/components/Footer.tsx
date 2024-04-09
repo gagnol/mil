@@ -67,11 +67,18 @@ const Footer = () => {
                 </div>
                 <div className="footer_bottom ">
                     <div className='footer_copyright text-white pt-1 mx-auto'>
-                        <div>
-                        <br/>
+                       
+                    <div className="flex gap-10 mx-auto justify-center">
+                            <p className='text-[14px] relative hover:underline cursor-pointer'>Terminos y condiciones</p>
+                            <Link href="/aviso">
+                            <p className='text-[14px] relative hover:underline cursor-pointer'>Privacidad</p>
+                            </Link>
+                            <Link href="/cookies">
+                            <p className='text-[14px] relative hover:underline cursor-pointer'>Politica de cookies</p>
+                            </Link>
                         </div>
-                        <p className='text-center'> &copy; 2017-{new Date().getFullYear()},
-                          Milproveedores, All Rights Reserved.</p>
+                         <p className='text-center pt-5'> &copy; 2023-{new Date().getFullYear()},
+                          Milproveedores, Todos los derechos reservados.</p>
                         <br/>
                     </div>
                 </div>

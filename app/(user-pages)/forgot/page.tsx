@@ -38,7 +38,7 @@ function Forgot() {
           {error && <div className="bg-red-500 text-white p-2 mb-2">{error}</div>}
           <h1 className="text-[21px] font-bold pb-5">Password Assistance</h1>
           <div className="a_label mb-5">
-            Enter the email address or mobile phone number associated with your Amazon account.&nbsp;
+            Enter the email address or mobile phone number associated with your Milproveedores account.&nbsp;
           </div>
           <label className="text-slate-300 ">Email</label>
           <input
@@ -51,7 +51,7 @@ function Forgot() {
             Continue
           </button>
           <h5 className="a_label mt-5">Has your email or mobile number changed?</h5>
-          <div className="a_label">  If you no longer use the email address associated with your Amazon account, you may contact&nbsp;
+          <div className="a_label">  If you no longer use the email address associated with your Milproveedores account, you may contact&nbsp;
              <a className="text-primary">Customer Services </a> for help restoring access to your account.
           </div>
         </form>

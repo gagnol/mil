@@ -88,7 +88,7 @@ export default function Signin() {
                     <button className='btn btn-outline btn-primary w-full' type='submit' >Continue</button>
                 </form>
 
-                <div className='a_label'>By continuing, you agree to Amazon&apos;s
+                <div className='a_label'>By continuing, you agree to Milproveedores&apos;s
                     <a className='text-[#0066c0]'> Conditions of Use </a>
                     and<a className='text-[#0066c0]'> Privacy Notice</a>
                 </div>
@@ -109,14 +109,11 @@ export default function Signin() {
             <FcGoogle />
             Sign In with Google
           </button>
-          
-               
-                <div className='a_divider'>__________ New to Amazon? __________</div>   
+            <div className='a_divider'>__________ New to Milproveedores? __________</div>   
                 <Link href="/register" >
-                <button className='a_regbtn'>Create your Amazon account </button>
+                <button className='a_regbtn'>Create your Milproveedores account </button>
                 </Link>
             </div>
-
         </div>
     )
 }
