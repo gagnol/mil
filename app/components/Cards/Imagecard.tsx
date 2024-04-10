@@ -22,13 +22,13 @@ const Imagecard = (props: { headline: string | number | boolean | React.ReactEle
             alt=""
             src={props.singleImage}
             priority
-            className='max-h-[340px] min-h-[340px] '
+            className='max-h-[340px] min-h-[340px] min-w-[240px]'
           
           />
         </Link>
         <div className="w-full text-[17px] absolute block px-0 pt-4">
           <a className="cursor-pointer  text-[14px] text-primary font-semibold" >
-            See more
+            Ver mas
           </a>
         </div>
         </div>

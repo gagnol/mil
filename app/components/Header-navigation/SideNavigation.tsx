@@ -26,7 +26,7 @@ const SideBar = () => {
             <button onClick={() => setOpen(true)}>
                 <p className="flex items-center gap-1 h-8 px-2 border border-transparent
                 text-white  hover:border-white cursor-pointer duration-300" >
-                    <LuMenu className="text-xl text-white" /> All
+                    <LuMenu className="text-xl text-white font-extrabold" /> <span className='font-bold'>Todo</span>
                 </p>
             </button>
             <div className='py-3 top-0 left-0 right-0 shadow-md z-30 '>
@@ -63,14 +63,14 @@ const SideBar = () => {
                             <div className="flex bg-black text-white text-[22px] justify-between p-5">
                                 <i> <FaUserCircle /></i>
                                 <Link href='/signin'>
-                                    <h2>Hello, <span>sign in</span></h2>
+                                    <h2>Hola, <span>Identificate</span></h2>
                                 </Link>
                                 <button aria-label="close" onClick={() => setOpen(false)}>
                                     <FaTimes color='#fff' />
                                 </button>
                             </div>)}
                         <div className="p-5 text-neutral-content">
-                            <h2 className='text-[18px] font-semibold mb-2 text-white'>Shoping by Department</h2>
+                            <h2 className='text-[18px] font-semibold mb-2 text-white'>Comprar por Categoria</h2>
                             <ul>
                                 {data?.categories.map((category: string) => (
                                     <Link key={category} href={`/search?category=${category}`}>
@@ -84,7 +84,7 @@ const SideBar = () => {
                                 {!show &&
                                     <div className="flex py-2 leading-3 text-primary
                                     hover:text-orange-400 cursor-pointer">
-                                        <li onClick={() => setShow(true)}>See More</li>
+                                        <li onClick={() => setShow(true)}>Ver Mas</li>
                                         <FaChevronDown />
                                     </div>
                                 }
@@ -101,7 +101,7 @@ const SideBar = () => {
                                     )).slice(3, 10)}
                                     <div className='flex py-2 leading-3 text-primary
                                      hover:text-orange-400 cursor-pointer'>
-                                        <li onClick={() => setShow(false)} >See Less</li>
+                                        <li onClick={() => setShow(false)} >Ver Menos</li>
                                         <FaChevronUp />
                                     </div>
                                 </ul>

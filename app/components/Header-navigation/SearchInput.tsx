@@ -21,7 +21,7 @@ const SearchInput: React.FC<{ placeholder: string, product: any }> = ({ placehol
   };
 
   if (!router) {
-    <>Something was wrong !</>
+    <>Algo salio mal !</>
     return null;
   }
 
@@ -39,7 +39,7 @@ const SearchInput: React.FC<{ placeholder: string, product: any }> = ({ placehol
          focus-visible:border-[#58abb3]"
         type="text"
         name="sarch"
-        placeholder="Search products"
+        placeholder="Buscar productos"
       />
       <span className="w-12 h-full bg-[#58abb3] text-black 
       text-2xl flex items-center justify-center right-0 rounded-tr-md rounded-br-md">
@@ -68,8 +68,7 @@ const SearchInput: React.FC<{ placeholder: string, product: any }> = ({ placehol
             <div className="bg-gray-50 flex items-center justify-center
                 py-10 rounded-lg shadow-lg">
               <p className="text-xl font-semibold animate-bounce">
-                Nothing is matches with your search keywords. Please try
-                again!
+                No se encontraron coincidencias!
               </p>
             </div>
           )}

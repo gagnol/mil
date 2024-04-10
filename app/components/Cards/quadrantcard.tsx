@@ -23,7 +23,7 @@ const Cuadcard = (props: { headline: string | number | boolean | React.ReactElem
             alt=""
             src={props.singleImage[0]}
             priority
-            className='max-h-[119px] min-h-[119px] relative'
+            className='max-h-[119px] min-h-[119px] w-full min-w-129 relative'
           />
         </Link>
         <span className="text-[14px] text-white">{props.subcategory[0]}</span>
@@ -41,7 +41,7 @@ const Cuadcard = (props: { headline: string | number | boolean | React.ReactElem
             alt=""
             src={props.singleImage[1]}
             priority
-            className='max-h-[119px] min-h-[119px] relative'
+            className='max-h-[119px] min-h-[119px] w-full min-w-129 relative'
           />
         </Link>
         <span className="text-[14px] text-white">{props.subcategory[1]}</span>
@@ -59,7 +59,7 @@ const Cuadcard = (props: { headline: string | number | boolean | React.ReactElem
             alt=""
             src={props.singleImage[2]}
             priority
-            className='max-h-[119px] min-h-[119px] relative'
+            className='max-h-[119px] min-h-[119px] w-full min-w-129 relative'
           />
         </Link>
         <span className="text-[14px] text-white">{props.subcategory[2]}</span>
@@ -77,7 +77,7 @@ const Cuadcard = (props: { headline: string | number | boolean | React.ReactElem
             alt=""
             src={props.singleImage[3]}
             priority
-            className='max-h-[119px] min-h-[119px]  relative'
+            className='max-h-[119px] min-h-[119px] w-full min-w-129 relative'
           />
         </Link>
         <span className="text-[14px] text-white">{props.subcategory[3]}</span>
@@ -88,7 +88,7 @@ const Cuadcard = (props: { headline: string | number | boolean | React.ReactElem
       {/* **************************************** */}
         <div className="w-full text-[17px] absolute block px-5 pt-[60px]">
           <a className="cursor-pointer text-[14px] text-primary font-semibold " >
-            See more
+            Ver Mas
           </a>
         
       </div>

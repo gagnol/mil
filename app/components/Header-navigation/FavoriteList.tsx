@@ -18,8 +18,8 @@ function FavoriteList() {
           flex-col justify-center p-3 border border-transparent
            hover:border-white cursor-pointer duration-300 h-[70%] relative"
         >
-          <p>Your</p>
-          <p className="text-white font-bold flex items-center">Whishlist</p>
+          <p>Tus</p>
+          <p className="text-white font-bold flex items-center">Favoritos</p>
           {favoriteData.length > 0 && (
             <span className="absolute right-2 top-2 w-4 h-4 border-[1px]
              border-gray-400 flex items-center justify-center text-xs text-amazon_yellow">

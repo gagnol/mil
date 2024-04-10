@@ -10,7 +10,7 @@ export default function Dealcard({deals}:any) {
   return (
     <div className="card_container">
       <div >
-        <h2 className="card_headline">Top Deal</h2>
+        <h2 className="card_headline">Ofertas en {deals.category}</h2>
       </div>
       <div className="grow mb-[44px] max-h-[400px] relative py-0 px-5 ">
         <div className="relative bg-white">
@@ -24,10 +24,10 @@ export default function Dealcard({deals}:any) {
           </div>
         </div>
         <div className=" flex mt-2 ">
-          <span className="bg-[#CC0C39] realtive text-white px-[4px] py-[6px] text-sm ">
-            Up to {deals.discount}  % off
+          <span className="bg-[#CC0C39] realtive text-white px-[10px] py-[6px] text-sm ">
+            {deals.discount}  % off
           </span>
-          <span className="ml-1 p-1 text-white"><b>Top deal</b></span>
+          <span className="ml-1 p-1 text-white"><b>Oferta del dia</b></span>
         </div>
         <div className="text-xs pt-1 mt-2 text-white">
    
@@ -35,7 +35,7 @@ export default function Dealcard({deals}:any) {
         </div>
         <div className="w-full text-[17px] absolute block px-0 pt-2 ">
           <a className="cursor-pointer text-[14px] text-primary font-semibold " >
-            See all deals
+           Ver Ofertas
           </a>
         </div>
       </div>

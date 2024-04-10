@@ -43,58 +43,46 @@ export default async function Home() {
         <div className="relative md:-mt020 lgl:-mt-32 xl:-mt-[350px] z-20 mb-10">
           <div className="w-full px-6 grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3">
             <Cuadcard
-              headline="Gaming Accessories"
+              headline="Carnes"
               singleImage={[singleImage8, singleImage9, singleImage10, singleImage11]}
-              subcategory={["Headsets", "Keyboard", "Computer mice", "Chair"]} />
+              subcategory={["Jamones", "Quesos", "Vinos", "Salsas"]} />
                {singleDeal.map((deals:any) => (
                 <Dealcard
                 deals={deals}
                 key={deals.slug} />
                 ))}
             <Imagecard
-              headline="Health & personal care"
+              headline="Bebidas"
               singleImage={singleImage2}
               subcategory="Personal Care"
             />
-            <div className="block">
-              <div className="card_container">
-                <h2 className="card_headline">Sign in for the best experience</h2>
-                <Link href="/signin">
-                  <button className="w-full my-4 p-2 text-black bg-[#F7CA00] cursor-pointer rounded-lg 
-                    hover:bg-[#e2bb0c]">
-                    Sign In Securely
-                  </button>
-                </Link>
-              </div>
-              <div className='bg-base-300 w-[358px] justify-center cursor-pointer relative mx-auto'>
-                <Link href={`/products/557`} >
-                  <Image src="/amazon1.webp" alt="" width={393} height={328} priority/>
-                </Link>
-              </div>
-              <div>
-                <span className=" text-[11px] text-[#888] float-right" > Sponsored </span>
-              </div>
-            </div>
+            
+              <Imagecard
+              headline="Mariscos"
+              singleImage={singleImage2}
+              subcategory="Personal Care"
+            />
+           
             <Imagecard
-              headline="Shop Pet supplies"
+              headline="Pescados"
               singleImage={singleImage1}
               subcategory="Pet Supplies" />
             <Imagecard
-              headline="Dresses"
+              headline="Lacteos"
               singleImage={singleImage3}
               subcategory="Dresses" />
             <Imagecard
-              headline="New arrivals in toys"
+              headline="Conservas"
               singleImage={singleImage4}
               subcategory="Toys & Games" />
             <Cuadcard
-              headline="Shop by Categories"
+              headline="Panificados"
               singleImage={[singleImage12, singleImage13, singleImage14, singleImage15]}
-              subcategory={["Computers", " Video Games", "Baby", "Toys & Games"]} />
+              subcategory={["Jamones", "Quesos", "Vinos", "Salsas"]} />
           </div>
           <div className="relative bg-neutral mb-4 pb-2 max-w-screen-2xl mx-6">
             <h2 className="text-[21px] pl-9 font-semibold pt-1 text-white">
-              Best sellers
+              Productos destacados
             </h2>
             <Slider products={bestSeller}/>
           </div>
@@ -114,19 +102,19 @@ export default async function Home() {
             ))}
             {/* ********************************************************** */}
             <Imagecard
-              headline="For your fitness needs"
+              headline="Accesorios"
               singleImage={singleImage5}
               subcategory="Fitness"
             />
             {/* ********************************************************** */}
             <Imagecard
-              headline="Kindle E readers"
+              headline="Verduras"
               singleImage={singleImage6}
               subcategory="Kindle"
             />
             {/* ********************************************************** */}
             <Imagecard
-              headline="Create with strip ligths"
+              headline="Productos de Limpieza"
               singleImage={singleImage7}
               subcategory="Strip Lights"
             />
@@ -142,12 +130,13 @@ export default async function Home() {
               <button className="h-[29px] w-[220px] px-5 py-1 font-medium text-black
                  border-[#a88734]  rounded-sm bg-gradient-to-b from-[#f7dfa5] to-[#f0c14b] 
                  hover:cursor-pointer hover:opacity-75" >
-                Sign in
+               Identificate
               </button>
             </Link>
           </div>
-          <div className="text-white">New customer?&nbsp;
-            <Link href="/register" ><span className="text-primary">Start here.</span></Link>
+          <h4>Ver recomendaciones personalizadas</h4>
+          <div className="text-white">¿Sos un cliente nuevo?&nbsp;
+            <Link href="/register" ><span className="text-primary">Empieza aquí.</span></Link>
           </div>
 
         </div>

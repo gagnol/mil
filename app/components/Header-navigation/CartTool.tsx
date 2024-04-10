@@ -23,8 +23,8 @@ const CartTool = () => {
             width={100}
             height={50}
           />
-          <p className="text-xs text-white font-bold mt-3">Cart</p>
-          <span className="absolute text-amazon_yellow text-sm top-2 left-[29px] font-semibold">
+          <p className="text-xs text-white font-bold mt-3">Carrito</p>
+          <span className="absolute text-white text-sm top-2 left-[29px] font-semibold">
             {productData ? productData.length : 0}
           </span>
         </Link>

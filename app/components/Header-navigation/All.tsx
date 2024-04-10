@@ -18,10 +18,10 @@ const { data, error } = useSWR('/api/products/subcategories', fetcher)
     return (
 
         <select id='select' name='select'
-            className="w-12 h-full bg-gray-200 text-black text-[13px]
+            className="w-fit h-full bg-gray-200 text-black text-[13px]
             flex items-center justify-center right-0 rounded-tl-md 
             rounded-bl-md hover:cursor-pointer" onChange={onSelectChange}>
-            <option value='all'>All</option>
+            <option value='all'>Categorias</option>
             {data
                 ? data.subcategories.map((item:any) => {
                     return <option key={item}>{item}</option>;

@@ -45,9 +45,9 @@ function SigninTool() {
                     px-2 border border-transparent hover:border-white cursor-pointer
                     overflow-x-hidden
                     duration-300 h-[70%]">
-                        <p > Hello,&nbsp;{session.user.name?.substring(0, 10)}</p>
+                        <p > Hola,&nbsp;{session.user.name?.substring(0, 10)}</p>
                         <p className="text-white font-bold flex items-center">
-                            Account & Lists
+                             Tu Cuenta 
                             <i aria-hidden="true">
                                 <FaCaretDown />
                             </i>
@@ -67,12 +67,12 @@ function SigninTool() {
                                 <div className='a_list_left'>
                                     {session?.user?.email === "admin@example.com"}
                                     <ul className='m-0 p-0'>
-                                        <h4 className='text-[16px] font-bold pb-2 text-white'>Your List</h4>
-                                        <li className="nav_text">Create a List</li>
-                                        <li className="nav_text">Find a List </li>
+                                        <h4 className='text-[16px] font-bold pb-2 text-white'>
+                                            Tu Lista de Favoritos </h4>
+                                        
                                         <Link href="/main">
                                             {session?.user?.email === "admin@example.com" ?
-                                                (<li className="nav_text font-bold">Dashboard</li>) : (<></>)
+                                                (<li className="nav_text font-bold">Panel Administrador</li>) : (<></>)
                                             }
                                         </Link>
                                     </ul>
@@ -81,25 +81,22 @@ function SigninTool() {
                                 <div className='flex-1 flex flex-row max-w-[50%] relative mx-4 my-0 '>
                                     <ul>
                                         <h4 className='text-[16px] font-bold pb-2 text-white '>
-                                            Your Account
+                                            Tu Cuenta
                                         </h4>
                                         <li className="nav_text">
                                             <Link href="/profile">
-                                                Account
+                                                Cuenta
                                             </Link>
                                         </li>
-                                        <li className="nav_text">Orders</li>
-                                        <li className="nav_text">Recommendations</li>
-                                        <li className="nav_text">Browsing History</li>
-                                        <li className="nav_text">
-                                            <Link href="/favorite">Watchlist</Link>
-                                        </li>
+                                        <li className="nav_text">Compras</li>
+                                        <li className="nav_text">Recomendaciones</li>
+                                        
                                         <li className="nav_text"> 
-                                         <Link href="/customer">Customer Service </Link>
+                                         <Link href="/customer">Servicio al Cliente </Link>
                                         </li>
 
                                         <li className="nav_text" onClick={handleSignOutClick}>
-                                            Sign Out
+                                            Cerrar Sesion
                                         </li>
                                     </ul>
                                 </div>
@@ -112,9 +109,9 @@ function SigninTool() {
                     <div className="group hidden xl:flex items-center px-2 border border-transparent
                     hover:border-white cursor-pointer duration-300 h-[70%] " >
                         <div className='block'>
-                            <p className='text-[12px]'>Hello,&nbsp;Sign in </p>
+                            <p className='text-[12px]'>Hola,&nbsp;Identificate </p>
                             <p className="text-white font-bold items-center text-[14px] flex" >
-                                Account & Lists
+                                Tu Cuenta
                                 <i aria-hidden="true">
                                     <FaCaretDown color='grey' />
                                 </i>
@@ -130,15 +127,15 @@ function SigninTool() {
                                         px-5 py-1 text-[#111] font-medium
                          border-[#a88734] rounded-sm bg-gradient-to-b from-[#f7dfa5]
                           to-[#f0c14b] hover:cursor-pointer hover:opacity-75" >
-                                            Sign in
+                                            Identificate
                                         </button>
                                     </Link>
                                 </div>
                                 <div >
-                                    <p className='text-white'>New customer?&nbsp;</p>
+                                    <p className='text-white'>¿Eres un cliente nuevo?&nbsp;</p>
                                     <Link href="/register" >
                                         <span className="text-primary">
-                                            Start here.
+                                        Empieza aquí.
                                         </span>
                                     </Link>
                                 </div>

@@ -29,7 +29,8 @@ const Footer = () => {
         <>
             <footer>
                 <div className="footer_back" onClick={ScrollToTop}>
-                    <a>Back to top</a>
+                    <a>Inicio de Página</a>
+                    
                 </div>
                 <div className="footer_middle ">
                     <FooterColumnMiddle title={footerLinks[0].title} links={footerLinks[0].links} />

@@ -3,7 +3,7 @@ import React from 'react'
 
 async function aviso() {
   return (
-    <div className='text-white max-w-screen-xl mx-auto py-5 '>
+    <div className='text-white max-w-screen-xl mx-5 xl:mx-auto py-5 '>
     <Link href="/">
     <button className='btn btn-primary btn-outline m-5 text-center'> Volver </button>
     </Link>
