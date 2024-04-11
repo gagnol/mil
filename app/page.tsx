@@ -27,9 +27,9 @@ import dbConnect from "@/lib/db-connect";
 
 export default async function Home() {
   await dbConnect();
-  const singleDealDoc = (await ProductModel.find({ slug: 535 }, "-reviews").lean());
-  const singleDealDoc2 = (await ProductModel.find({ slug: 546 }, "-reviews").lean());
-  const bestSellerDoc = (await ProductModel.find({ bestSeller: true }, "-reviews").lean());
+  const singleDealDoc = (await ProductModel.find({ slug: 1 }, "-reviews").lean());
+  const singleDealDoc2 = (await ProductModel.find({ slug: 4 }, "-reviews").lean());
+  const bestSellerDoc = (await ProductModel.find({ bestSeller: false }, "-reviews").lean());
 
   const singleDeal = await JSON.parse(JSON.stringify(singleDealDoc));
   const singleDeal2 = await JSON.parse(JSON.stringify(singleDealDoc2));
