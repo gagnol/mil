@@ -18,6 +18,7 @@
     "cloudinary": "^1.41.2",
     "daisyui": "^4.4.14",
     "date-fns": "^3.3.1",
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^10.16.15",
     "micro": "^10.0.1",
     "mongoose": "^8.0.2",

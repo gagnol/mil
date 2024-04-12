@@ -28,13 +28,13 @@ import dbConnect from "@/lib/db-connect";
 export default async function Home() {
   await dbConnect();
   const singleDealDoc = (await ProductModel.find({ slug: 1 }, "-reviews").lean());
-  const singleDealDoc2 = (await ProductModel.find({ slug: 4 }, "-reviews").lean());
-  const bestSellerDoc = (await ProductModel.find({ bestSeller: false }, "-reviews").lean());
+  const singleDealDoc2 = (await ProductModel.find({ slug: 2 }, "-reviews").lean());
+  const bestSellerDoc = (await ProductModel.find().lean());
 
   const singleDeal = await JSON.parse(JSON.stringify(singleDealDoc));
   const singleDeal2 = await JSON.parse(JSON.stringify(singleDealDoc2));
   const bestSeller = await JSON.parse(JSON.stringify(bestSellerDoc));
-
+ 
 
   return (
     <main>
