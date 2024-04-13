@@ -29,7 +29,7 @@ const SideBar = () => {
                     <LuMenu className="text-xl text-white font-extrabold" /> <span className='font-bold'>Todo</span>
                 </p>
             </button>
-            <div className='py-3 top-0 left-0 right-0 shadow-md z-30 '>
+            <div className='py-3 top-0 left-0 right-0 shadow-md z-30 text-white'>
                 <div className={`${!open && "hidden"} bg-gray-600/50 min-h-screen w-full 
               fixed top-0 left-0 right-0 `} onClick={() => setOpen(false)}></div>
                 <div className={`${open ? "w-80" : "w-0"}  bg-base-300 min-h-screen fixed overflow-y-scroll
@@ -70,11 +70,11 @@ const SideBar = () => {
                                 </button>
                             </div>)}
                         <div className="p-5 text-neutral-content">
-                            <h2 className='text-[18px] font-semibold mb-2 text-white'>Comprar por Categoria</h2>
+                            <h2 className='text-[18px] font-semibold mb-2 text-white'>Comprar por Departamento</h2>
                             <ul>
                                 {data?.categories.map((category: string) => (
                                     <Link key={category} href={`/search?category=${category}`}>
-                                        <li className='py-2 hover:bg-[#babebe]  
+                                        <li className='py-2 text-white hover:bg-[#babebe]  
                                         hover:text-black cursor-pointer'
                                             key={category} value={category} onClick={() => setOpen(false)}>
                                             <p>{category}</p>
@@ -93,7 +93,7 @@ const SideBar = () => {
                                 <ul >
                                     {data?.categories.map((category: string) => (
                                         <Link key={category} href={`/search?category=${category}`}>
-                                            <li className='py-2 hover:bg-[#babebe]  hover:text-black cursor-pointer'
+                                            <li className='py-2 hover:bg-[#babebe] text-white  hover:text-black cursor-pointer'
                                                 key={category} value={category} onClick={() => setOpen(false)}>
                                                 <p>{category}</p>
                                             </li>
@@ -107,22 +107,16 @@ const SideBar = () => {
                                 </ul>
                             }
                         </div>
+                       
                         <div className="p-5 text-neutral-content border-t-2 border-gray-400">
-                            <h2 className='text-[18px] font-semibold mb-2 text-white'>Programs & Features</h2>
-                            <p className='py-2 hover:bg-[#babebe]  hover:text-black cursor-pointer'>Gift Cards & Mobile Recharges</p>
-                            <p className='py-2 hover:bg-[#babebe]  hover:text-black cursor-pointer'>Flight Tickets</p>
-                            <p className='py-2 hover:bg-[#babebe]  hover:text-black cursor-pointer'>#Foundlt-OnAmazon</p>
-                            <p className='py-2 hover:bg-[#babebe]  hover:text-black cursor-pointer'>Clearance store</p>
-                        </div>
-                        <div className="p-5 text-neutral-content border-t-2 border-gray-400">
-                            <h2 className='text-[18px] font-semibold mb-2 text-white'>Help & Settings</h2>
-                            <p className='py-2 hover:bg-[#babebe] hover:text-black cursor-pointer'>Your Account</p>
-                            <p className='py-2 hover:bg-[#babebe]  hover:text-black cursor-pointer'><Link href="/customer">Customer Service</Link></p>
+                            <h2 className='text-[18px] font-semibold mb-2 text-white'>Tu cuenta</h2>
+                            <p className='py-2 hover:bg-[#babebe] text-white hover:text-black cursor-pointer'>Cuenta</p>
+                            <p className='py-2 hover:bg-[#babebe] text-white hover:text-black cursor-pointer'><Link href="/customer">Servicio al cliente</Link></p>
                             {session?.user ? (  
-                                <p className='py-2 hover:bg-[#babebe]  hover:text-black cursor-pointer' onClick={handleSignOutClick}> Sign out </p>
+                                <p className='py-2 hover:bg-[#babebe] text-white hover:text-black cursor-pointer' onClick={handleSignOutClick}> Cerrar sessión </p>
                             ):(
                             <>
-                                <p className='py-2 hover:bg-[#babebe]  hover:text-black cursor-pointer'>  <Link href="/signin">Sign in </Link></p>
+                                <p className='py-2 hover:bg-[#babebe] text-white  hover:text-black cursor-pointer'>  <Link href="/signin">Identificate </Link></p>
                             
                             </>
                             )}

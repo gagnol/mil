@@ -20,12 +20,12 @@ export default function ReviewForm({ session, product }: any) {
     setRating(value);
   };
   return (
-    <div className="py-5">
-      <p >Review this product</p>
+    <div className="py-5 text-white">
+      <p >Calificá este producto</p>
       <p className='text-neutral-400 text-[14px] my-2'>
-        Share your thoughts with other customers
+        Compartí tus experiencias con otros compradores
       </p>
-      <h1 className="tex-2xl font-bold pm-4">Post your review</h1>
+      <h1 className="tex-2xl font-bold pm-4">Enviá tu calificación</h1>
       <form
         action={async (formData) => {
           const res = await updateReview(null, formData)
@@ -33,7 +33,7 @@ export default function ReviewForm({ session, product }: any) {
 
         }}          >
         <div className="form-control w-full max-w-xs py-4">
-          <label htmlFor="subject">Subject</label>
+          <label htmlFor="subject">Asunto</label>
           <input
             type="text"
             id="subject"
@@ -70,7 +70,7 @@ export default function ReviewForm({ session, product }: any) {
           defaultValue={session?.user?.image}
         />
         <div className="form-control w-full max-w-xs py-4">
-          <label htmlFor="review">Your review</label>
+          <label htmlFor="review">Comentarios del producto</label>
           <textarea
             rows={10}
             cols={32}
@@ -85,7 +85,7 @@ export default function ReviewForm({ session, product }: any) {
 
         </div>
         <div className="form-control w-full max-w-xs py-4">
-          <h3>Your rating</h3>
+          <h3>Tu calificación</h3>
           <Rating value={rating || 0} />
           <div className="flex space-x-2">
             {[1, 2, 3, 4, 5].map((value) => (
@@ -108,7 +108,7 @@ export default function ReviewForm({ session, product }: any) {
         </div>
 
         <button type="submit" disabled={pending} className="btn btn-primary btn-outline w-[50%]">
-          Post review
+          Enviar Calificación
         </button>
       </form>
     </div>

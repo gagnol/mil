@@ -112,8 +112,6 @@ export type CheckoutOrderParams = {
       productImage:string[],
       productName:string[],
       subTotal:number,
-      shipping:number,
-      importFees:number,
       totalAmount:number,
       email: string,
       userId: string
@@ -126,8 +124,6 @@ export type CreateOrderParams = {
       productImage:string[],
       productName:string[],
       subTotal:number,
-      shipping:number,
-      importFees:number,
       totalAmount:number,
       email: string,
       userId: string

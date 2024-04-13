@@ -14,12 +14,12 @@ import Link from "next/link";
 const CartProduct = ({ item }:any) => {
   const dispatch = useDispatch();
   return (
-    <div className=" bg-neutral rounded-lg flex  ">
+    <div className=" bg-neutral rounded-lg flex text-white ">
       <Link href={`/product/${item.slug}`}>
         <Image
           width={150}
           height={150}
-          src={item.image}
+          src={item.image[0]}
           alt="productImage"
           className="min-h-[150px] max-h-[150px] min-w-[150px]"
         />
@@ -30,15 +30,12 @@ const CartProduct = ({ item }:any) => {
             {item.name}
           </p>
           <p className=" text-base">
-            List Price{" "}
-            <span className="font-semibold text-">
-             $ {item.price.toFixed(2)}
+            Precio de Lista{" "}
+            <span className="font-semibold text-white line-through">
+             € {item.price.toFixed(2)}
             </span>
           </p>
-          <div className="inline-flex border-transparent border-[3px]" >
-            <div className="w-[33px] h-[33px] rounded-md " style={{ backgroundColor: item.color }}></div>
-            <p className="p-1">{item.colorName}</p>
-          </div>
+          
           <div className="flex items-center gap-6 justify-center">
             <div className="flex items-center mt-1 justify-between border
              border-gray-300 px-4 py-1 rounded-full w-28 shadow-lg shadow-gray-300">
@@ -46,26 +43,8 @@ const CartProduct = ({ item }:any) => {
                 onClick={() =>
                   dispatch(
                     increaseQuantity({
-                      _id: item._id,
-                      brand: item.brand,
-                      category: item.category,
-                      description: item.description,
-                      image: item.image,
-                      price: item.price,
-                      name: item.name,
+                      ...item,
                       quantity: 1,
-                      video: [""],
-                      slug: "",
-                      subcategory: "",
-                      rating: 0,
-                      numReviews: 0,
-                      countInStock: item.countInStock,
-                      isFeature: "",
-                      discount: 0,
-                      topDeal: "",
-                      bestSeller: "",
-                      colors: [""],
-                      countryData:[""],
                       discountPrice:item.discountPrice
                     })
                   )
@@ -81,26 +60,8 @@ const CartProduct = ({ item }:any) => {
                 onClick={() =>
                   dispatch(
                     decreaseQuantity({
-                      _id: item._id,
-                      brand: item.brand,
-                      category: item.category,
-                      description: item.description,
-                      image: item.image,
-                      price: item.price,
-                      name: item.name,
+                      ...item,
                       quantity: 1,
-                      video: [""],
-                      slug: "",
-                      subcategory: "",
-                      rating: 0,
-                      numReviews: 0,
-                      countInStock: item.countInStock,
-                      isFeature: "",
-                      discount: 0,
-                      topDeal: "",
-                      bestSeller: "",
-                      colors: [""],
-                      countryData:[""],
                       discountPrice:item.discountPrice
                     })
                   )
@@ -113,15 +74,15 @@ const CartProduct = ({ item }:any) => {
             </div>
             <div
               onClick={() => dispatch(deleteProduct(item._id))}
-              className="flex items-center text-sm font-medium text-neutral-100
+              className="flex items-center text-sm font-medium text-white
                hover:text-red-600 cursor-pointer duration-300"
             >
-              <IoMdClose className="mt-[2px]" /> <p>remove</p>
+              <IoMdClose className="mt-[2px]" /> <p>Eliminar</p>
             </div>
           </div>
         </div>
         <div className=" justify-center min-w-[180px] text-lg font-semibold text-white">
-          $ {(item.discountPrice * item.quantity).toFixed(2)}
+          € {(item.discountPrice * item.quantity).toFixed(2)}
         </div>
       </div>
     </div>

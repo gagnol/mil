@@ -5,7 +5,7 @@ const ResetFavoriteItems = () => {
   const dispatch = useDispatch();
   const handleResetCart = () => {
     const confirmReset = window.confirm(
-      "Are you sure to reset your list?"
+      "Estás seguro de eliminar la lista?"
     );
     if (confirmReset) {
       dispatch(resetFavorite());

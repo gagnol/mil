@@ -18,33 +18,13 @@ const AddToFavorite: React.FC<AddToFavoriteProps> = ({product}) => {
                   onClick={() =>
                     dispatch(
                       addFavorite({
-                        _id: product._id,
-                        slug:product.slug,
-                        brand: product.brand,
-                        category: product.category,
-                        description: product.description,
-                        image: product.image[0],
-                        price: product.price,
-                        name: product.name,
-                        quantity: 1,
-                        video: [""],
-                        subcategory: "",
-                        rating: 0,
-                        numReviews: 0,
-                        countInStock: 0,
-                        isFeature: "",
-                        discount: 0,
-                        topDeal: "",
-                        bestSeller: "",
-                        colors: [""],
-                        discountPrice:product.discountPrice,
-                        countryData:[ "" ]
+                        ...product
                       }),
-                      toast.success('Product add to your wishlist', { duration: 4000, position: "top-center", })
+                      toast.success('Producto a tu lista de favoritos', { duration: 4000, position: "top-center", })
                     )
                     
                     } >
-                  Add to List
+                  Agregar a mis Favoritos
                 </button>
     </>
   )

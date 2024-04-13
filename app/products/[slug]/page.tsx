@@ -4,8 +4,6 @@ import AddToCart from "@/app/components/Product-detail/addToCart";
 import ImageGallery from "@/app/components/Product-detail/image-gallery";
 import Loading from "@/app/components/Product-detail/loading";
 import Progressbar from "@/app/components/Product-detail/progressbar";
-import Questions from "@/app/components/Product-detail/questions";
-import QuestionForm from "@/app/components/Product-detail/questionForm";
 import Reviews from "@/app/components/Product-detail/reviews";
 import Slider from "@/app/components/Slider";
 import Rating from "@/app/components/rating";
@@ -14,7 +12,6 @@ import ProductModel from "@/lib/product-model";
 import TaskModel from "@/lib/task-model";
 import Image from "next/image";
 import { FaLock } from "react-icons/fa";
-import ColorPicker from "@/app/components/Product-detail/colorPicker";
 import CountryTaxes from "@/app/components/Product-detail/countryTaxes";
 import ReviewForm from "@/app/components/Product-detail/reviewForm";
 import { getServerSession } from "next-auth";
@@ -67,15 +64,15 @@ export default async function ProductDetail({ params }: { params: { slug: string
 
   return (
     <Loading >
-      <div className="flex flex-wrap sm:justify-center lg:justify-start mt-10 ml-10">
+      <div className="flex flex-wrap sm:justify-center lg:justify-start mt-10 ml-10 text-white">
         <div >
           <ImageGallery product={product} />
           <div className="w-[483px] h-[240px] bg-base-200 mt-5 text-center p-2 " >
             <div className="w-[80%] mx-auto">
-              <p><strong>We want you to know</strong></p>
+              <p><strong>Aviso</strong></p>
             </div>
             <div className="w-[80%] mx-auto">
-              <div className="text-[14px]"><p>App buttons may vary.</p>
+              <div className="text-[14px]"><p></p>
                 <p>To benefit from Wi-Fi 6, you&amp;
                   ll need a Wi-Fi 6-compatible router (like the eero 6),
                   but Fire TV Stick 4K Max is also compatible with earlier wifi routers.
@@ -90,8 +87,8 @@ export default async function ProductDetail({ params }: { params: { slug: string
           </div>
         </div>
         <div className="w-[40%] ml-5">
-          <h4 className="text-[24px] text-neutral-content">{product.name}</h4>
-          <h4>Brand: <a className="text-primary">{product.brand}</a></h4>
+          <h4 className="text-[24px] text-white">{product.name}</h4>
+          <h4>Vendedor: <a className="text-primary">{product.brand}</a></h4>
           <div className="flex flex-wrap items-center space-x-2 mb-2  border-b-2 ">
             <div className="my-2">
               <div className="flex">
@@ -101,7 +98,7 @@ export default async function ProductDetail({ params }: { params: { slug: string
               </div>
             </div>
             <span className="ml-1">{product.numReviews} ratings |</span>
-            <h4>{countAnswer} answered questions</h4>
+            <h4>{countAnswer} preguntas de compradores</h4>
           </div>
           <div className='mb-4 '>
             {product.bestSeller === "true" ?
@@ -120,37 +117,37 @@ export default async function ProductDetail({ params }: { params: { slug: string
                 <h5 className="text-[28px] text-[#CC0C39] ">-{product.discount}%</h5>
                 &nbsp;
                 <h4 className="text-[28px] pl-2">
-                  <span className="text-[13px] align-middle">$</span>
+                  <span className="text-[13px] align-middle">€</span>
                     {Math.ceil(discountPrice)}
                 </h4>
               </div>
               <div className="flex">
-                <h6>List price :</h6>
-                &nbsp;   &nbsp;<h6 className="line-through"> ${product.price}</h6>
+                <h6>Precio de lista :</h6>
+                &nbsp;   &nbsp;<h6 className="line-through"> €{product.price}</h6>
               </div>
             </>
             :
             <div className="flex text-center">
               <h4 className="text-[28px] ">
-                <span className=" text-[14px] font-bold mr-5">Price: </span>
-                <span className="text-[13px] align-middle"> $</span>
+                <span className=" text-[14px] font-bold mr-5">Precio: </span>
+                <span className="text-[13px] align-middle"> €</span>
                 {product.price}
               </h4>
             </div>
           }
           <div className="flex text-center">
-            <h4 className="text-[14px] font-bold mr-5">Deparment</h4>
+            <h4 className="text-[14px] font-bold mr-5">Departamento</h4>
             <h5 className="text-[14px] font-normal">{product.category}</h5>
           </div>
           <div className="flex text-center">
-            <h4 className="text-[14px] font-bold mr-5" >Category</h4>
+            <h4 className="text-[14px] font-bold mr-5" >Categoría</h4>
             <h5 className="text-[14px] font-normal">&nbsp;{product.subcategory}</h5>
           </div>
           {/* COLOR SELECTION */}
-          <ColorPicker product={product} />
+          
 
           <div className="mt-5">
-            <h4 className="text-[16px] font-bold mt-2" >About this item</h4>
+            <h4 className="text-[16px] font-bold mt-2" >Sobre este producto</h4>
             <h5 className="text-[14px] font-normal text-neutral-content" >
               {product.description}
             </h5>
@@ -162,8 +159,8 @@ export default async function ProductDetail({ params }: { params: { slug: string
             <>
               <div className="flex align-middle">
                 <h4 className="text-[28px] pl-2">
-                  <span className=" text-[18px] align-middle">Price: </span>
-                  <span className="text-[13px] align-middle"> $</span>
+                  <span className=" text-[18px] align-middle">Precio: </span>
+                  <span className="text-[13px] align-middle"> €</span>
                   {Math.ceil(discountPrice)}
                 </h4>
               </div>
@@ -171,42 +168,36 @@ export default async function ProductDetail({ params }: { params: { slug: string
             :
             <div className="flex align-middle">
               <h4 className="text-[28px] pl-2">
-                <span className=" text-[18px] align-middle">Price: </span>
-                <span className="text-[13px] align-middle"> $</span>
+                <span className=" text-[18px] align-middle">Precio: </span>
+                <span className="text-[13px] align-middle">€</span>
                 {product.price}
               </h4>
             </div>
           }
 
-          <CountryTaxes discountPrice={discountPrice} />
+          <CountryTaxes discountPrice={discountPrice} product={product}/>
 
           {product.countInStock > 0 ? <>
             <h4 className="text-[18px] text-[#007600] font-normal my-2">
-              In stock
+              Disponible
             </h4><br />
             <AddToCart product={product} discountPrice={discountPrice} />
-            <button className="w-full bg-[#FA8900] p-2 rounded-[25px] text-neutral font-bold
-            cursor-pointer mb-2 hover:opacity-75">
-              Buy Now
-            </button>
-          </>
+             </>
             : <h4 className="text-[18px] text-[#B12704] font-normal my-2">
-              Temporarily out of stock.</h4>}
+              Temporalmente sin stock.</h4>}
           <h4 className="flex text-[14px] text-primary my-1">
             <FaLock color='#949494' fontSize={16} />
-            &nbsp; Secure transaction</h4>
+            &nbsp; Transacción segura</h4>
           <div className="flex my-0 ">
-            <h4 className="text-neutral-content text-[14px] my-2">Ships from</h4>
-            <h5 className="font-normal text-[14px] my-2">&nbsp;Amazon.com</h5>
+            <h4 className="text-neutral-content text-[14px] my-2">Enviado por</h4>
+            <h5 className="font-normal text-[14px] my-2">&nbsp;{product.brand}</h5>
           </div>
           <div className="flex my-0 ">
-            <h4 className="text-neutral-content text-[14px] my-2">Sold by</h4>
-            <h5 className="font-normal text-[14px] my-2">&nbsp;Amazon.com</h5>
+            <h4 className="text-neutral-content text-[14px] my-2">Vendedor</h4>
+            <h5 className="font-normal text-[14px] my-2">&nbsp;{product.brand}</h5>
           </div>
           <div className="flex my-2">
-            <h5 className="font-normal text-[14px] my-2">
-              &nbsp;Eligible for Return, Refund or Replacement
-            </h5>
+            
           </div>
           <div className="border-[#D5D9D9] border-[1px] rounded-lg
        bg-light-white relative py-[14px] px-[18px]">
@@ -216,8 +207,7 @@ export default async function ProductDetail({ params }: { params: { slug: string
               alt="Amazon prime logo"
               width={50} height={31} />
 
-            <h5 className="text-[14px] text-[#565959] font-normal mt-2">
-              Enjoy fast, FREE delivery,exclusive deals and award-winning movies &amp; TV shows with Prime</h5>
+            
             <br />
             <span >
               <h4 >Try Prime	and start saving today with
@@ -229,8 +219,7 @@ export default async function ProductDetail({ params }: { params: { slug: string
           </div>
           <br />
           <label>
-            <input type="checkbox" autoComplete="false" name="check" />
-            <span >&thinsp;Add a gift receipt for easy returns</span>
+           
           </label>
           <AddToFavorite product={product} />
         </div>
@@ -240,26 +229,24 @@ export default async function ProductDetail({ params }: { params: { slug: string
       <div >
         <br />
         <div className="relative max-w-screen-2xl  px-4 py-4 md:py-4">
-          <h2 className="text-[21px] font-semibold px-10 pt-1 mb-2">
-            Popular products based on this item
+          <h2 className="text-[21px] font-semibold px-10 pt-1 mb-2 text-white">
+            Productos relacionados 
           </h2>
           <Slider products={similarProducts} />
         </div >
         {/****************** QUESTIONS & ANSWERS ****************/}
-        <Questions questionProducts={questionProducts} product={product} />
-        <QuestionForm product={product} />
+        
         {/****************** CUSTOMER REVIEWS ****************/}
-        <h2 className="text-[21px] pl-4 font-semibold mx-10 pt-2 border-t-2">
-          Customer reviews
+        <h2 className="text-[21px] pl-4 font-semibold mx-10 pt-2 border-t-2 text-white">
+          Calificaciones de este producto
         </h2>
         <div className="grid grid-cols-2 px-10">
           <div className=" grid-cols-1 block mx-5 ">
             <div className="flex">
               <Rating value={product.rating} />
               <h1 className="px-2">{product.rating ? product.rating + ' out of 5' : 'Rating not available'}</h1>
-
             </div>
-            <h2>{product.numReviews} global ratings</h2>
+            <h2>{product.numReviews} Total de ratings</h2>
             <div className="border-white border-[1px] rounded p-2 my-5">
               {product.reviews && product.reviews.length > 0 ? (
                 reviewsPercentage
@@ -270,7 +257,7 @@ export default async function ProductDetail({ params }: { params: { slug: string
                     </div>
                   ))
               ) : (
-                <p>No reviews for this product.</p>
+                <p>No hay revisiones sobre este producto.</p>
               )}
             </div>
 
@@ -280,13 +267,13 @@ export default async function ProductDetail({ params }: { params: { slug: string
               </>
             ) : (
               <div className='block '>
-                <p >Review this product</p>
+                <p >Califica este producto</p>
                 <p className='text-neutral-400 text-[14px] my-2'>
-                  Share your thoughts with other customers
+                 Compartí tus experiencias con otros usuarios
                 </p>
                 <Link href={`/signin?redirect=/product/${product.slug}`} >
                   <button className="my-[15px] p-1 w-[50%] btn btn-primary btn-outline" >
-                    Write a customer review
+                    Tu calificación
                   </button>
                 </Link>
               </div>
@@ -301,7 +288,6 @@ export default async function ProductDetail({ params }: { params: { slug: string
                 </div>
               ))
               .slice(0, 10)
-
             }
 
           </div>

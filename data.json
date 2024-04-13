@@ -1,7 +1,6 @@
 [
    {
-      
-     "name": "5J Jamón Ibérico de Bellota, Jamón Entero con Hueso - 14 a 18 lbs",
+     "shipping":5.99,"name": "5J Jamón Ibérico de Bellota, Jamón Entero con Hueso - 14 a 18 lbs",
      "discount": 20,
      "numReviews": 571,
      "rating": 4.6,
@@ -24,8 +23,7 @@
    },
 
    {
-      
-     "name": "Jamón serrano español en rodajas curado en seco (12 onzas) + jamón ibérico español en rodajas (2 onzas) - Jamón ibérico español (Pata Negra) y serrano sin nitratos ni nitritos, todo natural, sin OMG y sin gluten",
+     "shipping":5.99,"name": "Jamón serrano español en rodajas curado en seco (12 onzas) + jamón ibérico español en rodajas (2 onzas) - Jamón ibérico español (Pata Negra) y serrano sin nitratos ni nitritos, todo natural, sin OMG y sin gluten",
      "discount": 15,
      "numReviews": 320,
      "rating": 4.1,
@@ -49,7 +47,7 @@
    },
 
    {
-      
+     "shipping":5.99,
      "name": "Surtido de Quesos Españoles + Jamón Ibérico Gratis 2 oz",
      "discount": 0,
      "numReviews": 221,
@@ -75,7 +73,7 @@
 
    {
       
-     "name": "Daoliva Aceite de Oliva Virgen Extra 5L (1.32 Gal)",
+     "shipping":5.99,"name": "Daoliva Aceite de Oliva Virgen Extra 5L (1.32 Gal)",
      "discount": 25,
      "numReviews": 1220,
      "rating": 4.0,
@@ -99,7 +97,7 @@
    },
    {
     
-     "name": "Don Bocarte - Anchoas cantábricas en aceite de oliva extra virgen, 6.98 oz, filetes pequeños 38/40",
+     "shipping":5.99,"name": "Don Bocarte - Anchoas cantábricas en aceite de oliva extra virgen, 6.98 oz, filetes pequeños 38/40",
      "discount": 0,
      "numReviews": 105,
      "rating": 3.8,
@@ -123,7 +121,7 @@
    },
    {
       
-     "name": "El Avion Pimenton Picante Ahumado - Pimentón Picante Ahumado 2.65 oz (Paquete de 5)",
+     "shipping":5.99,"name": "El Avion Pimenton Picante Ahumado - Pimentón Picante Ahumado 2.65 oz (Paquete de 5)",
      "discount": 0,
      "numReviews": 2055,
      "rating": 4.3,
@@ -147,7 +145,7 @@
    },
    {
       
-     "name": "Jamón Bellota 100% IBérico de Gama Libre // JAMON DE BELLOTA 100% IBERICO by Fermin",
+     "shipping":5.99,"name": "Jamón Bellota 100% IBérico de Gama Libre // JAMON DE BELLOTA 100% IBERICO by Fermin",
      "discount": 0,
      "numReviews": 1120,
      "rating": 4.8,
@@ -171,7 +169,7 @@
    },
    {
     
-     "name": "Fermin Salchicha Ibérica Morcilla Ibérica (5 oz) (Paquete de 1)",
+     "shipping":5.99,"name": "Fermin Salchicha Ibérica Morcilla Ibérica (5 oz) (Paquete de 1)",
      "discount": 10,
      "numReviews": 20,
      "rating": 3,
@@ -194,7 +192,7 @@
    },
    {
      
-    "name": "Huevos - marrón (paquete de 6) (9647)",
+    "shipping":5.99,"name": "Huevos - marrón (paquete de 6) (9647)",
     "discount": 0,
     "numReviews": 20,
     "rating": 4,
@@ -218,7 +216,7 @@
   },
   {
      
-    "name": "Pollo fresco 2 1/2 kg ",
+    "shipping":5.99,"name": "Pollo fresco 2 1/2 kg ",
     "discount": 0,
     "numReviews": 350,
     "rating": 4.7,
@@ -240,7 +238,7 @@
   },
   {
      
-    "name": "Salchicha embase 6 unidades",
+    "shipping":5.99,"name": "Salchicha embase 6 unidades",
     "discount": 15,
     "numReviews": 350,
     "rating": 4.8,
@@ -262,7 +260,7 @@
   },
   {
      
-    "name": "Lomo 350g primera calidad ",
+    "shipping":5.99,"name": "Lomo 350g primera calidad ",
     "discount": 0,
     "numReviews": 250,
     "rating": 3.0,
@@ -284,7 +282,7 @@
   },
   {
      
-    "name": "Gorton's, Salmón a la parrilla clásico, 6.3 oz (congelado)",
+    "shipping":5.99,"name": "Gorton's, Salmón a la parrilla clásico, 6.3 oz (congelado)",
     "discount": 20,
     "numReviews": 250,
     "rating": 3.0,
@@ -306,7 +304,7 @@
   },
   {
      
-    "name": "Comidas de carne Kosher Mre listas para comer, variedad de carne de res y cordero, filete de costilla de ternera, filete de pimienta de res (paquete de 3), plato preparado totalmente cocido, cena de microondas estable en el estante",
+    "shipping":5.99,"name": "Comidas de carne Kosher Mre listas para comer, variedad de carne de res y cordero, filete de costilla de ternera, filete de pimienta de res (paquete de 3), plato preparado totalmente cocido, cena de microondas estable en el estante",
     "discount": 30,
     "numReviews": 1250,
     "rating": 4.5,
@@ -327,7 +325,7 @@
   },
   {
      
-    "name": "Filet Mignon- 15oz fresco",
+    "shipping":5.99,"name": "Filet Mignon- 15oz fresco",
     "discount": 0,
     "numReviews": 150,
     "rating": 3.8,
@@ -349,7 +347,7 @@
   },
   {
      
-    "name": "Orgain Batido nutricional orgánico vegano a base de plantas, chocolate suave, reemplazo de comida, 0.56 oz de proteína, 21 vitaminas y minerales, sin lácteos, sin gluten",
+    "shipping":5.99,"name": "Orgain Batido nutricional orgánico vegano a base de plantas, chocolate suave, reemplazo de comida, 0.56 oz de proteína, 21 vitaminas y minerales, sin lácteos, sin gluten",
     "discount": 0,
     "numReviews": 133,
     "rating": 3.8,
@@ -372,7 +370,7 @@
   },
   {
      
-    "name": "Nairn's Grahams de avena de jengibre sin gluten, 5.64 onzan",
+    "shipping":5.99,"name": "Nairn's Grahams de avena de jengibre sin gluten, 5.64 onzan",
     "discount": 0,
     "numReviews": 33,
     "rating": 3.8,
@@ -394,7 +392,7 @@
   }, 
   {
      
-    "name": "Heinz Ketchup de tomate (botella de 567 g)",
+    "shipping":5.99,"name": "Heinz Ketchup de tomate (botella de 567 g)",
     "discount": 0,
     "numReviews": 333,
     "rating": 4.0,

@@ -7,7 +7,7 @@ function Reviews({ item }:any) {
 
   return (
     <div key={item._id} className=" w-[70%] mx-5 my-3">
-    <ul key={item._id}>
+    <ul key={item._id} className='text-white'>
       <li className='flex'>
        {item.avatar?
         <>
@@ -27,7 +27,7 @@ function Reviews({ item }:any) {
         <h4 ><b>&nbsp; {item.subject}</b></h4>
       </li>
       <li >
-        <h4 className="text-primary" >Reviewed in the United States on
+        <h4 className="text-primary" >Calificado el día
           &nbsp;
           {new Date(item.createdAt.substring(0, 10)).toLocaleDateString(
             'en-US',

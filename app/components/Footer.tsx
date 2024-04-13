@@ -70,12 +70,13 @@ const Footer = () => {
                     <div className='footer_copyright text-white pt-1 mx-auto'>
                        
                     <div className="flex gap-10 mx-auto justify-center">
-                            <p className='text-[14px] relative hover:underline cursor-pointer'>Terminos y condiciones</p>
+                            <p className='text-[14px] relative hover:underline cursor-pointer'>Términos y condiciones</p>
                             <Link href="/aviso">
                             <p className='text-[14px] relative hover:underline cursor-pointer'>Privacidad</p>
                             </Link>
                             <Link href="/cookies">
-                            <p className='text-[14px] relative hover:underline cursor-pointer'>Politica de cookies</p>
+                            <p className='text-[14px] relative hover:underline cursor-pointer'>
+                                Política de cookies</p>
                             </Link>
                         </div>
                          <p className='text-center pt-5'> &copy; 2023-{new Date().getFullYear()},

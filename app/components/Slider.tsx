@@ -20,13 +20,14 @@ function Slider({ products }:any) {
     return (
         <>
             <div className='flex items-center bg-base-100 mx-10 py-5'>
-                <MdChevronLeft className='opacity-50 cursor-pointer hover:opacity-100' onClick={slideLeft} size={40} />
+                <MdChevronLeft className='opacity-50 cursor-pointer hover:opacity-100 text-white' 
+                onClick={slideLeft} size={40} />
                 <div
                     id='slider'
                     className='flex w-full h-full overflow-x-scroll scroll whitespace-nowrap 
                       scroll-smooth scrollbar-hide'>
                     {products?.map((item:any) => (
-                        <div className=" inline-block mx-1 rounded-lg border border-gray-200
+                        <div className=" inline-block mx-1 
                             shadow-md max-w-[200px] h-[300px]" key={item.slug}>
                                 <Link href={`/products/${item.slug}`}  >
                                     <Image
@@ -35,19 +36,19 @@ function Slider({ products }:any) {
                                         width={200}
                                         height={200} alt="i"
                                         src={item.image[0]}
-                                        
                                     />
                                 </Link>
                                 <div className="flex flex-col justify-start p-2 overflow-hidden
                                 text-[14px] text-neutral-content ">
-                                    <p className="font-semibold text-white">{item.name.substring(0, 20)}...</p>
+                                    <p className="font-semibold text-white">
+                                        {item.name.substring(0, 20)}...</p>
                                     <Rating value={item.rating} />
-                                    <p className="text-white">${item.price}</p>
+                                    <p className="text-white">€{item.price}</p>
                                 </div>
                             </div>
                     ))}
                 </div>
-                <MdChevronRight className='opacity-50 cursor-pointer 
+                <MdChevronRight className='opacity-50 cursor-pointer text-white
                 hover:opacity-100' onClick={slideRight} size={40} />
             </div>
         </>

@@ -6,7 +6,7 @@ const ResetCart = () => {
   const dispatch = useDispatch();
   const handleResetCart = () => {
     const confirmReset = window.confirm(
-      "Are you sure to reset your items from the cart?"
+      "¿Estás seguro de eliminar los productos del carrito ?"
     );
     if (confirmReset) {
       dispatch(resetCart());
@@ -19,7 +19,7 @@ const ResetCart = () => {
        btn btn-error btn-outline 
        hover:bg-red-600 hover:text-white duration-300"
     >
-      reset cart
+      Borrar todo
     </button>
   );
 };

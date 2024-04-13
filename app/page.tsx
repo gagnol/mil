@@ -35,41 +35,41 @@ export default async function Home() {
   const singleDeal2 = await JSON.parse(JSON.stringify(singleDealDoc2));
   const bestSeller = await JSON.parse(JSON.stringify(bestSellerDoc));
  
-
+ 
   return (
     <main>
-      <div className="max-w-screen-2xl mx-auto py-20 ">
+      <div className="max-w-screen-2xl mx-auto py-2 ">
          <Banner/> 
         <div className="relative md:-mt020 lgl:-mt-32 xl:-mt-[350px] z-20 mb-10">
           <div className="w-full px-6 grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3">
             <Cuadcard
               headline="Carnes"
               singleImage={[singleImage8, singleImage9, singleImage10, singleImage11]}
-              subcategory={["Jamones", "Quesos", "Vinos", "Salsas"]} />
+              subcategory={["Vacuna", "Pollo", "Cerdo", "Pescados"]} />
                {singleDeal.map((deals:any) => (
-                <Dealcard
+                <Dealcard 
                 deals={deals}
                 key={deals.slug} />
                 ))}
             <Imagecard
               headline="Bebidas"
               singleImage={singleImage2}
-              subcategory="Personal Care"
+              subcategory="Bebidas"
             />
-            
+           
               <Imagecard
               headline="Mariscos"
-              singleImage={singleImage2}
+              singleImage={singleImage3}
               subcategory="Personal Care"
             />
            
             <Imagecard
-              headline="Pescados"
+              headline="Pescados" 
               singleImage={singleImage1}
               subcategory="Pet Supplies" />
             <Imagecard
               headline="Lacteos"
-              singleImage={singleImage3}
+              singleImage={singleImage5}
               subcategory="Dresses" />
             <Imagecard
               headline="Conservas"

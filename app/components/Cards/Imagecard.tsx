@@ -28,7 +28,7 @@ const Imagecard = (props: { headline: string | number | boolean | React.ReactEle
         </Link>
         <div className="w-full text-[17px] absolute block px-0 pt-4">
           <a className="cursor-pointer  text-[14px] text-primary font-semibold" >
-            Ver mas
+            Ver más
           </a>
         </div>
         </div>

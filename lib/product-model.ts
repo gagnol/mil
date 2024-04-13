@@ -18,7 +18,8 @@ export type Product = {
     discount: number,
     topDeal: string,
     bestSeller: string,
-    colors:[string]
+    colors:[string],
+    shipping:number
     
 }
 const reviewSchema = new mongoose.Schema(
@@ -61,6 +62,7 @@ const reviewSchema = new mongoose.Schema(
       ],
       required: false
     },
+    shipping:{ type: Number, required: true  },
     reviews: [reviewSchema],
   
     },

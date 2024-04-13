@@ -27,7 +27,7 @@ export default function Dealcard({deals}:any) {
           <span className="bg-[#CC0C39] realtive text-white px-[10px] py-[6px] text-sm ">
             {deals.discount}  % off
           </span>
-          <span className="ml-1 p-1 text-white"><b>Oferta del dia</b></span>
+          <span className="ml-1 p-1 text-white"><b>Oferta del día</b></span>
         </div>
         <div className="text-xs pt-1 mt-2 text-white">
    

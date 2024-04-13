@@ -2,6 +2,7 @@
 import emailjs from "emailjs-com";
 import Image from 'next/image';
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 
 const Mailer = ({ session }:any) => {
@@ -26,7 +27,7 @@ const Mailer = ({ session }:any) => {
         console.log(res);
         return setData({
           ...data,
-          success: "Su consulta fue enviada, le responderemos a la brevedad"
+          success: toast.success("Su consulta fue enviada , le responderemos a la brevedad", { duration: 4000, position: "top-center", })
         });
 
       })
@@ -41,7 +42,7 @@ const Mailer = ({ session }:any) => {
 
   return (
 
-    <div className="grid lg:grid-cols-[50%,1fr] gap-20">
+    <div className="grid lg:grid-cols-[50%,1fr] gap-20 text-white">
       <div>
         <Image
           className="w-[80%] h-auto lg:w-auto lg:h-auto mx-auto"

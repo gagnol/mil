@@ -17,7 +17,7 @@ import React from 'react'
         redirect("/signin")
     }
     return (
-        <div className="max-w-screen-xl mx-auto px-6 gap-10 py-4">
+        <div className="max-w-screen-xl mx-auto px-6 gap-10 py-4 text-white">
             <header className="relative flex justify-between h-[60px] text-[16px] bg-neutral-800
             p-5 m-5">
                 <div className="cs-title">
