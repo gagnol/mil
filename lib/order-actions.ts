@@ -1,7 +1,7 @@
 "use server"
 
 import Stripe from 'stripe';
-import { CheckoutOrderParams, CreateOrderParams, GetOrdersByEventParams, GetOrdersByUserParams } from "@/types"
+import { CheckoutOrderParams, CreateOrderParams } from "@/types"
 import { redirect } from 'next/navigation';
 import User from './user-model'
 import dbConnect from './db-connect'
@@ -29,6 +29,7 @@ export const checkoutOrder = async (order: CheckoutOrderParams) => {
             unit_amount: price,
             product_data: {
               name: productName,
+              
 
             }
           },

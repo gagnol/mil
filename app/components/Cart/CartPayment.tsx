@@ -22,7 +22,13 @@ const CartPayment = () => {
   const { productData, userInfo } = useSelector(
     (state: any) => state.next
   );
-
+  console.log(productData)
+  const shipping = (
+    productData.reduce(
+      (acc: number,item: CartItem ) => acc + item.shipping ,0
+    )
+  );
+  
   const subTotal = (
     productData.reduce(
       (acc: number, item: CartItem) =>
@@ -31,9 +37,10 @@ const CartPayment = () => {
   );
   
   
-  const totalAmount = subTotal + productData.shipping
+  const totalAmount = subTotal + shipping
   
-
+  const orderImg= (productData.map((item:any) => item.image[0]))
+  
   
 // Stripe payment
 const stripePromise = loadStripe(
@@ -57,19 +64,22 @@ useEffect(() => {
  
 const onCheckout = async () => {
   const order  = {
-    quantity:productData.map((item:any) => item.quantity),
-    productId:productData.map((item:any) => item._id),
-    productImage:productData.map((item:any) => item.image),
-    productName:productData.map((item:any) => item.name.substring(0,10)),
-    subTotal,
-    totalAmount,
-    email: session?.user?.email || "",
-    userId:session?.user?.name || "",
-    shippingInfo:userInfo.user.address+","+userInfo.user.city+","+userInfo.user.postal+","+userInfo.user.country|| ""
+    name:userInfo.user?.name,
+    price:totalAmount * 100,
+    items: productData.slug,
+    email:userInfo.user?.email
   }
-
-  await checkoutOrder(order);
-  await createOrder(order)
+  console.log(order)  
+  const res:any = await fetch('/api/checkout', {
+      method: "POST",
+      body: JSON.stringify(order),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+    const session = await res.json()
+    window.location = session.url
+  
 }
 
   return (
@@ -94,7 +104,7 @@ const onCheckout = async () => {
       </p>
       
       <p className="text-white">
-        Costos de envio:<span className="float-right pr-1">€{productData.shipping}</span>
+        Costos de envio:<span className="float-right pr-1">€{shipping}</span>
       </p>
       <p className="flex items-center justify-between px-1 font-semibold border-t text-white">
         Total:{" "}
