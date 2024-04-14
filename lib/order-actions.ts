@@ -25,7 +25,7 @@ export const checkoutOrder = async (order: CheckoutOrderParams) => {
       line_items: [
         {
           price_data: {
-            currency: 'usd',
+            currency: 'eur',
             unit_amount: price,
             product_data: {
               name: productName,
@@ -45,7 +45,10 @@ export const checkoutOrder = async (order: CheckoutOrderParams) => {
         userId: order.email,
       },
       payment_method_types: ["card"],
-    
+      shipping_address_collection: {
+        allowed_countries: ["ES"],
+      },
+  
       mode: "payment",
       success_url: `${process.env.NEXT_PUBLIC_SERVER_URL}/success`,
       cancel_url: `${process.env.NEXT_PUBLIC_SERVER_URL}/cart`,

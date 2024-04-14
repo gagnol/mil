@@ -4,8 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addCart } from '@/store/nextSlice';
 import toast from 'react-hot-toast';
 
-
-
 interface AddToCartProps {
   product: any;
   discountPrice:number
@@ -23,11 +21,29 @@ const AddCart: React.FC<AddToCartProps> = ({ product,discountPrice }) => {
         onClick={() =>
           dispatch(
             addCart({
-             ...product,
+              _id: product._id,
+              brand: product.brand,
+              category: product.category,
+              description: product.description,
+              image: product.image[0],
+              price: product.price,
+              name: product.name,
+              video: [""],
+              slug: "",
+              subcategory: "",
+              rating: 0,
+              numReviews: 0,
+              countInStock: product.countInStock,
+              isFeature: "",
+              discount: 0,
+              topDeal: "",
+              bestSeller: "",
+              colors: [""],
+              countryData:[""],
+              discountPrice:discountPrice,
               quantity: 1,
-              discountPrice:Number(discountPrice),
-           
-              
+              shipping:product.shipping
+                         
             }),
             toast.success('Producto añadio al carrito', { duration: 4000, position: "top-center", })
           )

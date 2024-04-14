@@ -22,7 +22,7 @@ const CartPayment = () => {
   const { productData, userInfo } = useSelector(
     (state: any) => state.next
   );
-  console.log(productData)
+  
   const shipping = (
     productData.reduce(
       (acc: number,item: CartItem ) => acc + item.shipping ,0
@@ -39,9 +39,21 @@ const CartPayment = () => {
   
   const totalAmount = subTotal + shipping
   
-  const orderImg= (productData.map((item:any) => item.image[0]))
+  interface Product {
+    [key: string]: string | string[];
+  }
   
+  const orderData: Product[] = productData.map((item: Product) => {
+    const newItem: Product = {};
+    for (const key in item) {
+      if (Object.prototype.hasOwnProperty.call(item, key)) {
+        newItem[key] = Array.isArray(item[key]) ? (item[key] as string[]).join(', ') : String(item[key]);
+      }
+    }
+    return newItem;
+  });
   
+    console.log(orderData)
 // Stripe payment
 const stripePromise = loadStripe(
   process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!
@@ -66,7 +78,7 @@ const onCheckout = async () => {
   const order  = {
     name:userInfo.user?.name,
     price:totalAmount * 100,
-    items: productData.slug,
+    items:productData,
     email:userInfo.user?.email
   }
   console.log(order)  
@@ -111,7 +123,7 @@ const onCheckout = async () => {
         <span className="font-bold text-xl pt-1 text-white">€{Math.ceil(totalAmount)}</span>
       </p>
       <div className="flex flex-col items-center">
-      <form action={onCheckout} method="post">
+      <form action={onCheckout} >
         <button
           type="submit"
           className="btn btn-primary btn-outline w-full"

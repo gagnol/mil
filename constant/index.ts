@@ -46,7 +46,7 @@ export const footerLinks = [
 ] 
    
 export const singleImage0="https://res.cloudinary.com/dh3wzusj8/image/upload/v1713018148/13_hrc4nq.jpg"
-export const singleImage1="https://res.cloudinary.com/dh3wzusj8/image/upload/v1713018143/9_oorman.jpg"
+export const singleImage1="https://res.cloudinary.com/dh3wzusj8/image/upload/v1713018159/20_skqqsc.jpg"
 export const singleImage2="https://res.cloudinary.com/dh3wzusj8/image/upload/v1713018137/5_fbbf2l.jpg"
 export const singleImage3="https://res.cloudinary.com/dh3wzusj8/image/upload/v1713018144/10_niajvi.jpg "
 export const singleImage4="https://res.cloudinary.com/dh3wzusj8/image/upload/v1713018145/11_xzyxtv.jpg"

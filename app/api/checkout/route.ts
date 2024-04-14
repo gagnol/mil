@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 
-export async function POST(request) {
+export async function POST(request:any) {
   const body = await request.json();
 
   const session = await stripe.checkout.sessions.create({
@@ -12,7 +12,7 @@ export async function POST(request) {
     line_items: [
       {
         price_data: {
-          currency: "usd",
+          currency: "eur",
           product_data: {
             name: body.name,
             images: ["https://res.cloudinary.com/dps8xubee/image/upload/v1713101274/peimljwzlw8eylbkhl9m.png"],
@@ -22,13 +22,21 @@ export async function POST(request) {
         quantity: 1,
       },
     ],
+    shipping_address_collection: {
+      allowed_countries: ["ES"]
+    },
     metadata: {
-       product: body.items,
+       product: JSON.stringify(body.items.map((item:any) => item._id)), 
+       name: JSON.stringify(body.items.map((item:any) => item.name)),
+       image: JSON.stringify(body.items.map((item:any) => item.image)),
+       prices: JSON.stringify(body.items.map((item:any) => item.price)),
+       shipping: JSON.stringify(body.items.map((item:any) => item.shipping)),
+       quantity: JSON.stringify(body.items.map((item:any) => item.quantity)),
        user: body.email
     },
     mode: "payment",
-  });
 
+  });
 
   return NextResponse.json(session);
 }

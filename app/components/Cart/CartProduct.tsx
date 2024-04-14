@@ -19,7 +19,7 @@ const CartProduct = ({ item }:any) => {
         <Image
           width={150}
           height={150}
-          src={item.image[0]}
+          src={item.image}
           alt="productImage"
           className="min-h-[150px] max-h-[150px] min-w-[150px]"
         />
@@ -43,9 +43,28 @@ const CartProduct = ({ item }:any) => {
                 onClick={() =>
                   dispatch(
                     increaseQuantity({
-                      ...item,
+                      _id: item._id,
+                      brand: item.brand,
+                      category: item.category,
+                      description: item.description,
+                      image: item.image,
+                      price: item.price,
+                      name: item.name,
+                      video: [""],
+                      slug: "",
+                      subcategory: "",
+                      rating: 0,
+                      numReviews: 0,
+                      countInStock: item.countInStock,
+                      isFeature: "",
+                      discount: 0,
+                      topDeal: "",
+                      bestSeller: "",
+                      colors: [""],
+                      countryData:[""],
+                      discountPrice:item.discountPrice,
                       quantity: 1,
-                      discountPrice:item.discountPrice
+                      shipping:item.shipping
                     })
                   )
                 }
@@ -60,9 +79,28 @@ const CartProduct = ({ item }:any) => {
                 onClick={() =>
                   dispatch(
                     decreaseQuantity({
-                      ...item,
+                      _id: item._id,
+                      brand: item.brand,
+                      category: item.category,
+                      description: item.description,
+                      image: item.image,
+                      price: item.price,
+                      name: item.name,
+                      video: [""],
+                      slug: "",
+                      subcategory: "",
+                      rating: 0,
+                      numReviews: 0,
+                      countInStock: item.countInStock,
+                      isFeature: "",
+                      discount: 0,
+                      topDeal: "",
+                      bestSeller: "",
+                      colors: [""],
+                      countryData:[""],
+                      discountPrice:item.discountPrice,
                       quantity: 1,
-                      discountPrice:item.discountPrice
+                      shipping:item.shipping
                     })
                   )
                 }

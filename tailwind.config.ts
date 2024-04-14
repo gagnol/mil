@@ -19,7 +19,7 @@ const config: Config = {
   },
   plugins: [require('daisyui'),require('tailwind-scrollbar-hide')],
   daisyui: {
-    themes: ["light", "dark", "synthwave","coffee","luxury"],
+    themes: ["light", "dark", "synthwave","coffee","aqua"],
   },
 }
 export default config

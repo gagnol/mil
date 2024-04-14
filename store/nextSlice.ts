@@ -22,8 +22,8 @@ interface Product {
   colors: [string],
   quantity: number,
   discountPrice: number
-  countryData: [any]
-
+  countryData: [any],
+  shipping:number
 }
 
 interface countryData {

@@ -3,32 +3,29 @@ import mongoose, { Document, Schema } from "mongoose";
 
 interface OrderDocument extends Document {
   quantity: string[],
-  productId: string[],
-  productImage: string[],
-  productName: string[],
-  subTotal: number,
-  shipping: number,
-  importFees: number,
-  totalAmount: number,
+  product: string[],
+  image: string[],
+  name: string[],
+  totalAmount: string,
   email: string,
   userId: string
   orderStatus: string,
   createdAt: Date
-  shippingInfo:string
+  shipping:string
 }
 
 const orderSchema = new Schema<OrderDocument>({
 
-  productId: { type: [String], required: true },
-  productImage: { type: [String], required: true },
-  productName: { type: [String], required: true },
+  product: { type: [String], required: true },
+  image: { type: [String], required: true },
+  name: { type: [String], required: true },
   userId: { type: String, required: true },
-  totalAmount: { type: Number, required: true },
+  totalAmount: { type: String, required: true },
   quantity: { type: [String], required: true },
-  orderStatus: { type: String, default: "Processing" },
-  shippingInfo: { type: String, required: true },
+  orderStatus: { type: String, default: "Preparando" },
+  shipping: { type: String, required: true },
   createdAt: { type: Date, default: Date.now }
-
+  
 });
 
 export default mongoose.models.Order || mongoose.model<OrderDocument>("Order", orderSchema);

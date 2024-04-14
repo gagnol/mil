@@ -66,7 +66,7 @@ export default async function Home() {
             />
             
             <Imagecard
-              headline="Pescados" 
+              headline="Helados" 
               singleImage={singleImage1}
               subcategory="Pet Supplies" />
             <Imagecard
