@@ -5,6 +5,7 @@ import Dealcard from "@/app/components/Cards/Dealcard";
 import Image from "next/image";
 import Link from "next/link";
 import {
+  singleImage0,
   singleImage1,
   singleImage2,
   singleImage3,
@@ -46,6 +47,7 @@ export default async function Home() {
               headline="Carnes"
               singleImage={[singleImage8, singleImage9, singleImage10, singleImage11]}
               subcategory={["Vacuna", "Pollo", "Cerdo", "Pescados"]} />
+             {/* deals */}  
                {singleDeal.map((deals:any) => (
                 <Dealcard 
                 deals={deals}
@@ -62,23 +64,23 @@ export default async function Home() {
               singleImage={singleImage3}
               subcategory="Personal Care"
             />
-           
+            
             <Imagecard
               headline="Pescados" 
               singleImage={singleImage1}
               subcategory="Pet Supplies" />
             <Imagecard
-              headline="Lacteos"
+              headline="Lácteos"
               singleImage={singleImage5}
               subcategory="Dresses" />
             <Imagecard
-              headline="Conservas"
+              headline="Panadería"
               singleImage={singleImage4}
               subcategory="Toys & Games" />
             <Cuadcard
-              headline="Panificados"
+              headline="Accesorios"
               singleImage={[singleImage12, singleImage13, singleImage14, singleImage15]}
-              subcategory={["Jamones", "Quesos", "Vinos", "Salsas"]} />
+              subcategory={["Papelería", "Utensillos", "Take e way", "Vajilla"]} />
           </div>
           <div className="relative bg-neutral mb-4 pb-2 max-w-screen-2xl mx-6">
             <h2 className="text-[21px] pl-9 font-semibold pt-1 text-white">
@@ -88,11 +90,9 @@ export default async function Home() {
           </div>
           <div className="hidden md:block justify-center items-center px-60 py-1 mb-5">
             <Link href={`/products/557`} >
-              <Image src="/amazon2.webp" alt="" width={970} height={250} priority />
+              <Image src="/slide_14.png" alt="" width={970} height={250} priority />
             </Link>
-            <div>
-              <span className="text-[11px] text-[#888] float-right pr-[80px]">Sponsored</span>
-            </div>
+            
           </div>
           <div className="w-full px-6 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3">
             {singleDeal2.map((deals:any) => (
@@ -102,8 +102,8 @@ export default async function Home() {
             ))}
             {/* ********************************************************** */}
             <Imagecard
-              headline="Accesorios"
-              singleImage={singleImage5}
+              headline="Frutas"
+              singleImage={singleImage0}
               subcategory="Fitness"
             />
             {/* ********************************************************** */}
@@ -114,7 +114,7 @@ export default async function Home() {
             />
             {/* ********************************************************** */}
             <Imagecard
-              headline="Productos de Limpieza"
+              headline="Salsas y aceites"
               singleImage={singleImage7}
               subcategory="Strip Lights"
             />

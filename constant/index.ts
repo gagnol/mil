@@ -45,24 +45,24 @@ export const footerLinks = [
   },
 ] 
    
-
+export const singleImage0="https://res.cloudinary.com/dh3wzusj8/image/upload/v1713018148/13_hrc4nq.jpg"
 export const singleImage1="https://res.cloudinary.com/dh3wzusj8/image/upload/v1713018143/9_oorman.jpg"
 export const singleImage2="https://res.cloudinary.com/dh3wzusj8/image/upload/v1713018137/5_fbbf2l.jpg"
 export const singleImage3="https://res.cloudinary.com/dh3wzusj8/image/upload/v1713018144/10_niajvi.jpg "
-export const singleImage4="https://res.cloudinary.com/dh3wzusj8/image/upload/v1713018143/9_oorman.jpg"
+export const singleImage4="https://res.cloudinary.com/dh3wzusj8/image/upload/v1713018145/11_xzyxtv.jpg"
 export const singleImage5="https://res.cloudinary.com/dh3wzusj8/image/upload/v1713018151/15_njrulg.jpg" 
-export const singleImage6="https://res.cloudinary.com/dps8xubee/image/upload/v1712688708/jn0ljh6ylf8uhuf9iyt3.svg" 
-export const singleImage7="https://res.cloudinary.com/dps8xubee/image/upload/v1712688708/jn0ljh6ylf8uhuf9iyt3.svg" 
+export const singleImage6="https://res.cloudinary.com/dh3wzusj8/image/upload/v1713018150/14_b0yw40.jpg" 
+export const singleImage7="https://res.cloudinary.com/dh3wzusj8/image/upload/v1713018173/29_tfgypf.jpg" 
 //Gaming accesories
 export const singleImage8="https://res.cloudinary.com/dh3wzusj8/image/upload/v1713018133/2_zfuvzq.jpg"
 export const singleImage9="https://res.cloudinary.com/dh3wzusj8/image/upload/v1713018132/1_gnuz7v.jpg"
 export const singleImage10="https://res.cloudinary.com/dh3wzusj8/image/upload/v1713018134/3_yjtmyw.jpg"
 export const singleImage11="https://res.cloudinary.com/dh3wzusj8/image/upload/v1713018143/9_oorman.jpg"
 //Shop by Categories
-export const singleImage12="https://res.cloudinary.com/dps8xubee/image/upload/v1712688724/g1zjj2qqjtslvxaouj8s.svg"
-export const singleImage13="https://res.cloudinary.com/dps8xubee/image/upload/v1712688708/jn0ljh6ylf8uhuf9iyt3.svg"
-export const singleImage14="https://res.cloudinary.com/dps8xubee/image/upload/v1712688705/xlxlkvp5i5lcts0kaby3.svg"
-export const singleImage15="https://res.cloudinary.com/dps8xubee/image/upload/v1712688725/nqncng5mdlxhe2asjsoo.svg"
+export const singleImage12="https://res.cloudinary.com/dh3wzusj8/image/upload/v1713018163/23_secklg.jpg"
+export const singleImage13="https://res.cloudinary.com/dh3wzusj8/image/upload/v1713018169/27_wqvz0u.jpg"
+export const singleImage14="https://res.cloudinary.com/dh3wzusj8/image/upload/v1713018164/24_nz3rqk.jpg"
+export const singleImage15="https://res.cloudinary.com/dh3wzusj8/image/upload/v1713018166/25_zjfrjw.jpg"
 
 /* 
 
