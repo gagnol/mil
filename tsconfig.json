@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/(user-pages)/forgot/pagetsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/(user-pages)/forgot/pagetsx", "app/components/Sections-Home/CountdownTimer.jsx", "app/page.jsx", "app/components/Sections-Home/Billboard.jsx"],
   "exclude": ["node_modules"]
 }

@@ -24,7 +24,7 @@ const CartTool = () => {
             height={50}
           />
           <p className="text-xs text-white font-bold mt-3">Carrito</p>
-          <span className="absolute text-white text-sm top-2 left-[29px] font-semibold">
+          <span className="absolute text-white text-sm top-2 left-[24px] font-semibold">
             {productData ? productData.length : 0}
           </span>
         </Link>

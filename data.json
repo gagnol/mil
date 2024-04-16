@@ -8,7 +8,7 @@
      "brand": "5j",
      "price": 1449.00,
      "description": "Iberico puro de bellota Peso 7 kg con hueso , estacionamiento de 4 años ",
-     "category": "Embutidos",
+     "category": "Despensa",
      "subcategory": "Jamones",
      "topDeal": true,
      "bestSeller": false,
@@ -21,7 +21,6 @@
      ],
      "slug": "1"
    },
-
    {
      "shipping":5.99,"name": "Jamón serrano español en rodajas curado en seco (12 onzas) + jamón ibérico español en rodajas (2 onzas) - Jamón ibérico español (Pata Negra) y serrano sin nitratos ni nitritos, todo natural, sin OMG y sin gluten",
      "discount": 15,
@@ -31,7 +30,7 @@
      "brand": "Jamonprive",
      "price": 54.99,
      "description": "☘️ Todo natural: sin nitratos ni nitritos añadidos. Sin aditivos de color añadidos, sin conservantes añadidos, sin OMG, sin gluten, sin lactosa. TIEMPO DE CURACIÓN: Jamón serrano en rodajas curado durante al menos 12 meses. Jamón ibérico curado durante al menos 36 meses. El Jamón Ibérico (Pata Negra) y el Serrano original de España.Ingredientes: Jamón de cerdo, sal + jamón de cerdo ibérico, sal. Totalmente natural, mínimamente procesado y sin ingredientes artificiales.DESCRIPCIÓN: El jamón serrano curado en seco (Prosciutto premium alternativa) y el jamón ibérico curado en seco (Paleta Ibérica Cebo Campo) elaborado en España son productos elaborados con las mejores piezas de cerdo seleccionadas para producir un producto 100% natural tras el proceso de salazón y curado, logrando así el mejor aroma y sabor. El regalo perfecto de vacaciones o aperitivo para ocasiones especiales.CARACTERÍSTICAS: Tiene un sabor delicado pero salado y un aroma y color agradables y característicos. En comparación con otras marcas de jamón, jamón jamón jamón ibérico e ibérico, el jamón ibérico de Jamonprive tiene un tiempo de curado más largo, con una textura más rica y suave. Se puede almacenar a temperatura ambiente.",
-     "category": "Embutidos",
+     "category": "Despensa",
      "subcategory": "Jamones",
      "topDeal": true,
      "bestSeller": true,
@@ -42,7 +41,6 @@
        "https://m.media-amazon.com/images/I/91mG1uH7zFL._SX679_.jpg"
 
      ],
-   
      "slug": "2"
    },
 
@@ -56,7 +54,7 @@
      "brand": "Carmen & Lola Eat",
      "price": 105.45,
      "description": "2 libras de los quesos españoles más famosos 8 oz Manchego 3 meses curado  8 oz Idiazabal  8 oz Mahon 8 oz de queso de cabra   2 oz de Jamón Ibérico de España Tenga en cuenta que cualquier artículo temporalmente agotado será sustituido por un artículo similar de igual valor.", 
-     "category": "Quesos",
+     "category": "Despensa",
      "subcategory": "Quesos",
      "topDeal": false,
      "bestSeller": true,
@@ -65,7 +63,6 @@
        "https://m.media-amazon.com/images/I/51Qe1bjiioL.jpg",
        "https://m.media-amazon.com/images/I/81QFnHgppFL._SX679_.jpg",
        "https://m.media-amazon.com/images/I/416v0bAboOL.jpg"
-
      ],
      
      "slug": "3"
@@ -81,7 +78,7 @@
      "brand": "Carmen & Lola Eat",
      "price": 96.42,
      "description": "Prensado en frío para preservar el sabor y la nutrición.   Importado de España. Elaborado a partir de aceitunas de la variedad Picual cultivadas en España.Aceite de oliva de calidad superior obtenido directamente de aceitunas y estrictamente por medios mecánicos.  Elaborado por uno de los principales productores de aceite de oliva español. Tamaño conveniente para uso doméstico o profesional.  Aceite de oliva virgen extra 100% puro. Sin OMG, sin gluten y vegano.",
-     "category": "Aceites",
+     "category": "Despensa",
      "subcategory": "Aceite de Oliva",
      "topDeal": true,
      "bestSeller": true,
@@ -92,11 +89,9 @@
        "https://m.media-amazon.com/images/I/71xvKYvYvPL._SX679_.jpg"
 
      ],
-     
      "slug": "4"
    },
    {
-    
      "shipping":5.99,"name": "Don Bocarte - Anchoas cantábricas en aceite de oliva extra virgen, 6.98 oz, filetes pequeños 38/40",
      "discount": 0,
      "numReviews": 105,
@@ -105,7 +100,7 @@
      "brand": "Carmen & Lola Eat",
      "price": 37.99,
      "description": "Procesado y empaquetado a mano en España.  Filetes pequeños 38/40.  Excelente sabor y textura delicada. Salvaje atrapado en el norte de España. Fabricado por Don Bocarte, el artesano más famoso de mariscos enlatados.",
-     "category": "Enlatados",
+     "category": "Despensa",
      "subcategory": "Pescados",
      "topDeal": false,
      "bestSeller": false,
@@ -129,7 +124,7 @@
      "brand": "Carmen & Lola Eat",
      "price": 25.99,
      "description": "Pimenton picante 13.23 Ounce",
-     "category": "Enlatados",
+     "category": "Despensa",
      "subcategory": "Condimentos",
      "topDeal": false,
      "bestSeller": true,
@@ -153,7 +148,7 @@
      "brand": "Fermin",
      "price": 149.99,
      "description": "Este jamón es el Rey de los Ibéricos. Elaborado a partir de cerdo 100% ibérico.  Durante la temporada de Montanera (de octubre a febrero), este cerdo duplica su peso comiendo bellotas y pasto.Curada durante 48 meses utilizando métodos artesanales en La Alberca, España, Reserva Natural declarada Patrimonio de la Humanidad.  Soporte para jamón no incluido. 15-17 lbs Aprox",
-     "category": "Embutidos",
+     "category": "Despensa",
      "subcategory": "Jamones",
      "topDeal": false,
      "bestSeller": true,
@@ -177,7 +172,7 @@
      "brand": "Fermin",
      "price": 39.21,
      "description": "Salchicha Ibérica Morcilla Ibérica (5 oz)",
-     "category": "Embutidos",
+     "category": "Despensa",
      "subcategory": "Morcilla",
      "topDeal": true,
      "bestSeller": false,
@@ -200,7 +195,7 @@
     "brand": "Milproveedores",
     "price": 9.99,
     "description": "Huevos fresco ecologicos marrones paquete de 6 unidades ",
-    "category": "Huevos",
+    "category": "Despensa",
     "subcategory": "Huevos",
     "topDeal": false,
     "bestSeller": false,
@@ -246,7 +241,7 @@
     "brand": "Milproveedores",
     "price": 39.99,
     "description": "Salchicha embase 6 unidades",
-    "category": "Embutidos",
+    "category": "Despensa",
     "subcategory": "Salchichas",
     "topDeal": false,
     "bestSeller": true,
@@ -312,7 +307,7 @@
     "brand": "Milproveedores",
     "price": 34.99,
     "description": "QUÉ HAY EN EL PAQUETE: Kabob de ternera y cordero con cebolla y pimiento, filete de costilla de res con patata Kugel Zanahoria Tzimmes & Farfel (Egg Cebada), Filete de Pimienta de Carne con Arroz en Salsa. FÁCIL DE PREPARAR: Comidas preparadas, totalmente cocidas, rápidas y fáciles de preparar y servir. Simplemente desenvuelve y colócala en un microondas durante 2 minutos, o colócala como está en agua hirviendo, calienta durante 7 a 10 minutos.VIAJA MEJOR: Bueno para ir a comer para una mejor experiencia de viaje. Perfecto para viajes, senderismo, mochileros, campamentos, o preparaciones de suministros de emergencia a largo plazo y almacenamiento de alimentos de supervivencia.ESTABILIDAD EN ESTANTE: No necesita refrigeración, larga vida útil, se puede almacenar en un área seca, refrigerada o congelada. Empaquetado y sellado en una bandeja para microondas. (Garantizamos la calidad de cada comida por hasta 3 años a partir de la fecha de fabricación, siempre que no se dañen de ninguna manera).Los mejores ingredientes: Nuestros platos se preparan con los mejores ingredientes, luego esterilizados para preservar la frescura, el sabor y la textura. Sin conservantes, sin MSG añadido. Fabricado en los Estados Unidos. GLATT KOSHER: Certificado por la Unión Ortodoxa (OU), y Rabino Getzel Berkowitz de Kiryas Joel.",
-     "category": "Congelados",
+     "category": "Carnes",
     "subcategory": "Carnes",
     "topDeal": true,
     "bestSeller": false,

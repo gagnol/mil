@@ -7,7 +7,6 @@ export const NavLinks = [
 ];
 
 
-
 export const footerLinks = [
   {
     title: 'Sobre Nosotros',
@@ -65,7 +64,6 @@ export const singleImage14="https://res.cloudinary.com/dh3wzusj8/image/upload/v1
 export const singleImage15="https://res.cloudinary.com/dh3wzusj8/image/upload/v1713018166/25_zjfrjw.jpg"
 
 /* 
-
 
 https://res.cloudinary.com/dh3wzusj8/image/upload/v1713018148/13_hrc4nq.jpg
 frutas
