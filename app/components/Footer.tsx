@@ -38,7 +38,7 @@ const Footer = () => {
                     <FooterColumnMiddle title={footerLinks[2].title} links={footerLinks[2].links} />
                     <FooterColumnMiddle title={footerLinks[3].title} links={footerLinks[3].links} />
                 </div>
-                <div className='block'>
+                <div className='block bg-black'>
                     <div className='flex w-full items-center justify-center pt-2 text-center border-t' >
                         <Link href="/" >
                             <Image
