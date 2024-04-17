@@ -43,7 +43,7 @@ const Transactions = async () => {
                     />
                   </td>
                   <td className='text-neutral-content'>{item.userId}</td>
-                  <td className='text-bold'>${item.totalAmount.toFixed(2)}</td>
+                  <td className='text-bold'>€{item.totalAmount}</td>
                   <td>
                     {new Date(item.createdAt.substring(0, 10)).toLocaleDateString(
                       'en-US',
