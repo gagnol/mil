@@ -30,9 +30,9 @@ const SideBar = () => {
                 </p>
             </button>
             <div className='py-3 top-0 left-0 right-0 shadow-md z-30 text-white'>
-                <div className={`${!open && "hidden"} bg-gray-600/50 min-h-screen w-full 
+                <div className={`${!open && "hidden"} bg-black min-h-screen w-full 
               fixed top-0 left-0 right-0 `} onClick={() => setOpen(false)}></div>
-                <div className={`${open ? "w-80" : "w-0"}  bg-base-300 min-h-screen fixed overflow-y-scroll
+                <div className={`${open ? "w-80" : "w-0"}  bg-black min-h-screen fixed overflow-y-scroll
                 top-0 left-0 transition-all duration-300 `}>
                     <div className={`${!open && "hidden"} pt-3 mt-[80px]`}>
                         {session?.user ? (
