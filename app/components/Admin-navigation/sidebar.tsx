@@ -45,8 +45,8 @@ const menuItems = [
     title: "Actions",
     list: [
       {
-        title: "Customer question",
-        path: "/answers",
+        title: "Customer",
+        path: "/stock",
         icon: <MdWork />,
       },
       {

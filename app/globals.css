@@ -32,11 +32,10 @@ body {
 
 .footer_middle {
   @apply text-white grid xl:grid-cols-4 grid-cols-2 gap-10 py-8 mx-auto 
-  justify-center text-center items-center  bg-base-300
-}
+  justify-center text-center items-center  bg-black}
 
 .footer_bottom {
-  @apply text-white flex flex-wrap p-2 px-8 w-full gap-2  bg-base-300
+  @apply text-white flex flex-wrap p-2 px-8 w-full gap-2  bg-black
 }
 
 .footer_ul {
@@ -48,11 +47,11 @@ body {
 }
 
 .footer_copyright {
-  @apply text-white flex-col w-full text-sm font-normal  bg-base-300;
+  @apply text-white flex-col w-full text-sm font-normal  bg-black;
 }
 
 .footer_column {
-  @apply text-white flex-1 flex flex-col gap-3 text-sm min-w-max  bg-base-300;
+  @apply text-white flex-1 flex flex-col gap-3 text-sm min-w-max  bg-black;
 }
 
 /* Card */
