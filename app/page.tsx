@@ -29,6 +29,7 @@ import Cuadcard from "@/app/components/Cards/quadrantcard";
 import Slider from '@/app/components/Sections-Home/Slider'
 import dbConnect from "@/lib/db-connect";
 import Products from "./components/Sections-Home/Products";
+import CookiesAdvise from "./components/Sections-Home/CookiesAdvise"
 
 export default async function Home() {
   await dbConnect();
@@ -46,6 +47,7 @@ export default async function Home() {
   return (
     <main>
       <div className="max-w-screen-2xl mx-auto py-2 ">
+    <CookiesAdvise/>
          <Banner/> 
         <div className="relative md:-mt020 lgl:-mt-32 xl:-mt-[350px] z-20 mb-10">
           <div className="w-full px-6 grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3">

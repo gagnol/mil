@@ -70,7 +70,12 @@ const Footer = () => {
                     <div className='footer_copyright text-white pt-1 mx-auto'>
                        
                     <div className="flex gap-10 mx-auto justify-center">
-                            <p className='text-[14px] relative hover:underline cursor-pointer'>Términos y condiciones</p>
+                            <p className='text-[14px] relative hover:underline cursor-pointer'>
+                                Términos y condiciones
+                            </p>
+                            <Link href="/legal">
+                            <p className='text-[14px] relative hover:underline cursor-pointer'>Aviso Legal</p>
+                            </Link>
                             <Link href="/aviso">
                             <p className='text-[14px] relative hover:underline cursor-pointer'>Privacidad</p>
                             </Link>
