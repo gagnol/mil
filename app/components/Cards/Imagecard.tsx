@@ -12,9 +12,9 @@ const Imagecard = (props: { headline: string | number | boolean | React.ReactEle
       <div className="card_headline">
         {props.headline}
       </div>
-      <div className=" grow mb-[44px] max-h-[400px] relative py-0 px-5 ">
-        <div className="relative bg-white">
-      <div className="justify-center  cursor-pointer">
+      <div className=" grow mb-[44px] max-h-[400px] relative py-0 px-5  ">
+        <div className="relative">
+      <div className="justify-center cursor-pointer rounded-2xl">
         <Link href={`/search?subcategory=${props.subcategory}`} >
           <Image
             width={340}
@@ -22,12 +22,12 @@ const Imagecard = (props: { headline: string | number | boolean | React.ReactEle
             alt=""
             src={props.singleImage}
             priority
-            className='max-h-[340px] min-h-[340px] min-w-[240px]'
+            className='max-h-[340px] min-h-[340px] min-w-[240px] rounded-2xl'
           
           />
         </Link>
         <div className="w-full text-[17px] absolute block px-0 pt-4">
-          <a className="cursor-pointer  text-[14px] text-primary font-semibold" >
+          <a className="cursor-pointer  text-[14px] text-black font-semibold" >
             Ver más
           </a>
         </div>

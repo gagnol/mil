@@ -17,7 +17,7 @@
 }
 
 body {
-  @apply bg-base-300
+  @apply bg-base-200
 }
 
 
@@ -58,11 +58,11 @@ body {
 /* Card */
 
 .card_container {
-  @apply grow mb-[10px] h-auto relative py-0 bg-neutral px-5 ;
+  @apply grow mb-[10px] h-auto relative py-0 bg-[#58abb3] px-5 rounded-2xl;
 }
 
 .card_headline {
-  @apply text-xl  pl-[17px] pt-2 font-semibold leading-normal text-white;
+  @apply text-xl  pl-[17px] pt-2 font-semibold leading-normal text-black;
 }
 
 /* Forms pages */

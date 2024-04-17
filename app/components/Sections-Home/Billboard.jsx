@@ -67,7 +67,7 @@ const Billboard = ({ product }) => {
               </div>
               <div className=" mt-20 block justify-center items-center w-full text-center" >
                 <Link href="/" >
-                  <button className="bg-[#5] text-white px-6 py-2 
+                  <button className="bg-[#58abb3] text-white px-6 py-2 
                    rounded-md hover:bg-[#5e514b] hover:opacity-55">
                     Explorar Ofertas
                   </button>
@@ -77,7 +77,7 @@ const Billboard = ({ product }) => {
           
             </div>
 
-          <div className='mx-5 text-center w-[30%]'>
+          <div className='mx-5 text-center w-[30%] border-1'>
              <h1 className=' text-xl xl:text-4xl text-white font-bold text-center'>
               Oferta del día
              </h1>

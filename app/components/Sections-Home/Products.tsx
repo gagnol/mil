@@ -21,7 +21,7 @@ const Products = ({ product }:any) => {
             transition-transform duration-300 rounded-lg"
             width={200}
             height={200}
-            src={product.image || product.image[0]}
+            src={product.image[0]}
             alt="productImage"
             priority
           /> 
@@ -60,8 +60,7 @@ const Products = ({ product }:any) => {
       </div>
       <hr/>
       <div className="px-4 py-3 flex flex-col gap-1">
-        <p className="text-xs text-gray-500 tracking-wide">{product.price}</p>
-       
+        <p className="text-lg text-black tracking-wide font-semibold text-center">€{product.price}</p>
         <p className="flex items-center text-center gap-2">
         </p>
       </div>

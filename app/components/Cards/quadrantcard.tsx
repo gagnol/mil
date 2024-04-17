@@ -13,9 +13,9 @@ const Cuadcard = (props: { headline: string | number | boolean | React.ReactElem
         {props.headline}
       </div>
     <div className='grid grid-cols-2 grid-rows-2'>
-      <div className="mb-[6px]  relative bg-neutral py-0 px-5 ">
-        <div className="inline-block relative ">
-           <div className=" hover:cursor-pointer">
+      <div className="mb-[6px] rounded-lg  relative bg-[#58abb3] py-0 px-5 ">
+        <div className="inline-block rounded-2xl relative ">
+           <div className=" hover:cursor-pointer rounded-2xl">
         <Link href={`/search?subcategory=${props.subcategory[0]}`} >
           <Image
             width={129}
@@ -23,17 +23,17 @@ const Cuadcard = (props: { headline: string | number | boolean | React.ReactElem
             alt=""
             src={props.singleImage[0]}
             priority
-            className='max-h-[119px] min-h-[119px] max-w-[129px] min-w-[129px] relative'
+            className='max-h-[119px] min-h-[119px] max-w-[129px] min-w-[129px] rounded-2xl relative'
           />
         </Link>
-        <span className="text-[14px] text-white">{props.subcategory[0]}</span>
+        <span className="text-[14px] text-black font-bold">{props.subcategory[0]}</span>
         </div>
         </div>
         </div>
 {/* ************************** 1 ***************************** */}
-<div className="mb-[6px]  relative bg-neutral py-0 px-5 ">
-        <div className="inline-block relative ">
-           <div className=" hover:cursor-pointer">
+<div className="mb-[6px] rounded-lg  relative bg-[#58abb3] py-0 px-5 ">
+        <div className="inline-block rounded-2xl relative ">
+           <div className=" hover:cursor-pointer rounded-2xl">
         <Link href={`/search?subcategory=${props.subcategory[1]}`} >
           <Image
             width={129}
@@ -41,17 +41,17 @@ const Cuadcard = (props: { headline: string | number | boolean | React.ReactElem
             alt=""
             src={props.singleImage[1]}
             priority
-            className='max-h-[119px] min-h-[119px] max-w-[129px] min-w-[129px] relative'
+            className='max-h-[119px] min-h-[119px] max-w-[129px] min-w-[129px] rounded-2xl relative'
           />
         </Link>
-        <span className="text-[14px] text-white">{props.subcategory[1]}</span>
+        <span className="text-[14px] text-black font-bold">{props.subcategory[1]}</span>
         </div>
         </div>
         </div>
         {/* ***************************** 2 ***************************** */}
-        <div className="mb-[6px]  relative bg-neutral py-0 px-5 ">
-        <div className="inline-block relative ">
-           <div className="hover:cursor-pointer">
+        <div className="mb-[6px] rounded-2xl  relative bg-[#58abb3] py-0 px-5 ">
+        <div className="inline-block rounded-2xl relative ">
+           <div className="hover:cursor-pointer rounded-2xl">
         <Link href={`/search?subcategory=${props.subcategory[2]}`} >
           <Image
             width={129}
@@ -59,17 +59,17 @@ const Cuadcard = (props: { headline: string | number | boolean | React.ReactElem
             alt=""
             src={props.singleImage[2]}
             priority
-            className='max-h-[119px] min-h-[119px] max-w-[129px] min-w-[129px] relative'
+            className='max-h-[119px] min-h-[119px] max-w-[129px] min-w-[129px] rounded-2xl relative'
           />
         </Link>
-        <span className="text-[14px] text-white">{props.subcategory[2]}</span>
+        <span className="text-[14px] text-black font-bold">{props.subcategory[2]}</span>
         </div>
         </div>
         </div>
         {/* *************************** 3 ************** */}
-        <div className="mb-[6px]  relative bg-neutral py-0 px-5 ">
-        <div className="inline-block relative ">
-           <div className=" hover:cursor-pointer">
+        <div className="mb-[6px] rounded-lg  relative bg-[#58abb3] py-0 px-5 ">
+        <div className="inline-block rounded-2xl relative ">
+           <div className=" hover:cursor-pointer rounded-2xl">
         <Link href={`/search?subcategory=${props.subcategory[3]}`} >
           <Image
             width={129}
@@ -77,17 +77,17 @@ const Cuadcard = (props: { headline: string | number | boolean | React.ReactElem
             alt=""
             src={props.singleImage[3]}
             priority
-            className='max-h-[119px] min-h-[119px] max-w-[129px] min-w-[129px] relative'
+            className='max-h-[119px] min-h-[119px] max-w-[129px] min-w-[129px] rounded-2xl relative'
           />
         </Link>
-        <span className="text-[14px] text-white">{props.subcategory[3]}</span>
+        <span className="text-[14px] text-black font-bold">{props.subcategory[3]}</span>
         </div>
         </div>
         </div>
   </div>
       {/* **************************************** */}
         <div className="w-full text-[17px] absolute block px-5 pt-[60px]">
-          <a className="cursor-pointer text-[14px] text-primary font-semibold " >
+          <a className="cursor-pointer text-[14px] text-black font-semibold " >
             Ver Más
           </a>
         

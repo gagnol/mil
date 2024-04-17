@@ -23,8 +23,7 @@ export default function ProductItem({ product }: { product: Product }) {
         <Link href={`/products/${product.slug}`}>
           <h2 className="font-normal text-white">{product.name.substring(0,100)}</h2>
         </Link>
-        <Rating value={product.rating}  />
-        <p className="mb-2">{product.brand}</p>
+          <p className="mb-2">{product.brand}</p>
         <div className="card-actions flex items-center justify-between">
           <span className="text-2xl">${product.price}</span>
         </div>

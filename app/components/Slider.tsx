@@ -19,8 +19,8 @@ function Slider({ products }:any) {
 
     return (
         <>
-            <div className='flex items-center bg-base-100 mx-10 py-5'>
-                <MdChevronLeft className='opacity-50 cursor-pointer hover:opacity-100 text-white' 
+            <div className='flex items-center bg-[#58abb3] mx-10 py-5'>
+                <MdChevronLeft className='opacity-50 cursor-pointer hover:opacity-100 text-black' 
                 onClick={slideLeft} size={40} />
                 <div
                     id='slider'
@@ -32,7 +32,7 @@ function Slider({ products }:any) {
                                 <Link href={`/products/${item.slug}`}  >
                                     <Image
                                         className="max-h-[200px] min-h-[200px] max-w-[200px] p-2 
-                                         hover:cursor-pointer "
+                                         hover:cursor-pointer rounded-xl "
                                         width={200}
                                         height={200} alt="i"
                                         src={item.image[0]}
@@ -40,15 +40,15 @@ function Slider({ products }:any) {
                                 </Link>
                                 <div className="flex flex-col justify-start p-2 overflow-hidden
                                 text-[14px] text-neutral-content ">
-                                    <p className="font-semibold text-white">
+                                    <p className="font-semibold text-black">
                                         {item.name.substring(0, 20)}...</p>
                                     <Rating value={item.rating} />
-                                    <p className="text-white">€{item.price}</p>
+                                    <p className="text-black">€{item.price}</p>
                                 </div>
                             </div>
                     ))}
                 </div>
-                <MdChevronRight className='opacity-50 cursor-pointer text-white
+                <MdChevronRight className='opacity-50 cursor-pointer text-blacks
                 hover:opacity-100' onClick={slideRight} size={40} />
             </div>
         </>

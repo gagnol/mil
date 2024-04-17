@@ -46,7 +46,8 @@ function Slider({ children }:any) {
 
     return (
         <>
-          <Slick {...settings} className="flex w-[70%] xl:w-[90%] h-full mx-auto items-center justify-center">
+          <Slick {...settings} className=" w-[70%] xl:w-[90%] h-full mx-auto
+           items-center justify-center ">
             {children}
           </Slick>
         </>
