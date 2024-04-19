@@ -36,15 +36,15 @@ const CartPage = () => {
               <ResetCart />
             </div>
           </div>
-          <div className="bg-neutral h-65 col-span-1 p-4 rounded-lg flex items-center justify-center">
+          <div className="bg-black h-65 col-span-1 p-4 rounded-lg flex items-center justify-center">
             <CartPayment />
 
           </div>
-          <div className="xl:w-[1000px] md:w-[300px] md:m-1 border-[1px] p-4 m-10 bg-neutral">
+          <div className="xl:w-[1000px] md:w-[300px] md:m-1 border-[1px] p-4 m-10 bg-black text-white">
             <p>
-            El precio y la disponibilidad de los artículos en están sujetos a cambios. 
+            El precio y la disponibilidad de los artículos están sujetos a cambios. 
             El Carrito es un lugar temporal para almacenar una lista de tus artículos 
-            y refleja el precio más reciente de cada artículo
+            y refleja el precio más reciente de cada artículo.
             </p>
           </div>
         </>
