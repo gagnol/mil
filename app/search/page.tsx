@@ -116,7 +116,7 @@ export default async function SearchPage({
   return (
     <div className="grid md:grid-cols-5 md:gap-5 mx-5 ">
       <div >
-        <div className="text-xl pt-3">Department</div>
+        <div className="text-xl pt-3">Categoría</div>
         <div >
           <ul>
             <li>
@@ -125,7 +125,7 @@ export default async function SearchPage({
                   }`}
                 href={getFilterUrl({ c: 'all' })}
               >
-                Any
+                Todas
               </Link>
             </li>
             {categories.map((c: any) => (
@@ -143,7 +143,7 @@ export default async function SearchPage({
           </ul>
         </div>
         <div>
-          <div className="text-xl pt-3">Price</div>
+          <div className="text-xl pt-3">Precio</div>
           <ul>
             <li>
               <Link
@@ -168,35 +168,7 @@ export default async function SearchPage({
           </ul>
         </div>
         <div className='my-5'>
-          <div className="text-xl pt-3">Categories</div>
-          <div className="dropdown dropdown-top ">
-            <div tabIndex={0} role="button" className="btn btn-primary btn-outline m-1">View Categories</div>
-            <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-              <li>
-                <Link
-                  className={`link link-hover ${'all' === subcategory && 'link-primary'
-                   }`}
-                  href={getFilterUrl({ sub: 'all' })}
-                >
-                  Any
-                </Link>
-              </li>
-              {subcategories?.map((sub: string) => (
-                <li key={sub}>
-                  <Link
-                    className={`link link-hover ${sub === subcategory && 'link-primary'
-                      }`}
-                    href={getFilterUrl({ sub })}
-                  >
-                    {sub}
-                  </Link>
-                </li>
-              )).slice(0,14)}
-            </ul>
-          </div>
-        </div>
-        <div className='my-5'>
-          <div className="text-xl pt-3">Customer Review</div>
+          <div className="text-xl pt-3">Calificación de clientes</div>
           <ul>
             <li>
               <Link
@@ -204,7 +176,7 @@ export default async function SearchPage({
                 className={`link link-hover ${'all' === rating && 'link-primary'
                   }`}
               >
-                Any
+                Todos
               </Link>
             </li>
             {ratings.map((r) => (
@@ -224,7 +196,7 @@ export default async function SearchPage({
       <div className="md:col-span-4">
         <div className="flex items-center justify-between  py-4">
           <div className="flex items-center">
-            {products.length === 0 ? 'No' : countProducts} Results
+            {products.length === 0 ? 'No' : countProducts} Resultados
             {q !== 'all' && q !== '' && ' : ' + q}
             {category !== 'all' && ' : ' + category}
             {subcategory !== 'all' && ' : ' + subcategory}
@@ -237,12 +209,12 @@ export default async function SearchPage({
               rating !== 'all' ||
               price !== 'all' ? (
               <Link className="btn btn-sm btn-error btn-outline" href="/search">
-                Clear
+                Limpiar filtros
               </Link>
             ) : null}
           </div>
           <div>
-            Sort by{' '}
+            Ordenar {' '}
             {sortOrders.map((s) => (
               <Link
                 key={s}

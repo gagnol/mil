@@ -20,7 +20,7 @@ const Mailer = ({ session }:any) => {
 
     emailjs
       .sendForm(
-        'service_zm06g9f', 'template_lk616vr', e.target,'tOLhRuJUPiui-K7mq'
+        'service_*****', 'template_****', e.target,'********'
         
       )
       .then((res) => {

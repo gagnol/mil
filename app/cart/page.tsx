@@ -21,13 +21,13 @@ const CartPage = () => {
     <div className="max-w-screen-2xl mx-auto px-6 grid md:grid-cols-2 xl:grid-cols-5 gap-2 py-4">
       {productData.length > 0 ? (
         <>
-          <div className="bg-neutral col-span-4 p-4 rounded-lg">
+          <div className="bg-black col-span-4 p-4 rounded-lg">
             <div className="flex items-center justify-between border-b-[1px] border-b-white pb-1">
               <p className="text-2xl text-white font-semibold text-amazon_blue">
                 Carrito de compras
               </p>
             </div>
-            <div className="p-2 flex flex-col gap-2  bg-neutral">
+            <div className="p-2 flex flex-col gap-2  bg-black text-white">
               {productData.map((item: any) => (
                 <div key={item._id}>
                   <CartProduct item={item} />
@@ -50,8 +50,8 @@ const CartPage = () => {
         </>
       ) : (
         <div className=" h-64 col-span-5 flex flex-col items-center 
-        justify-center py-5 rounded-lg shadow-lg bg-neutral">
-          <h1 className="text-lg font-medium">Tu carrito está vacío!</h1>
+        justify-center py-5 rounded-lg shadow-lg bg-black">
+          <h1 className="text-lg text-white font-medium">Tu carrito está vacío!</h1>
           <Link href={"/"}>
             <button className="w-52 h-10 bg-amazon_blue text-white rounded-lg text-sm 
             font-semibold hover:bg-amazon_yellow hover:text-black">

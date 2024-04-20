@@ -126,12 +126,12 @@ export default async function Main() {
             <div className="flex gap-1">
               <Chart salesData={salesData} productsData={productsData} />
               <div className="h-[450px] w-[40%] p-5 bg-neutral-400 rounded-lg xl:block md:hidden">
-                <h2 className="mb-1 font-medium text-black">Department contribution</h2>
+                <h2 className="mb-1 font-medium text-black">Distribuccíon de productos</h2>
                 <table className=" text-center">
                   <thead>
                     <tr className="text-neutral text-center">
-                      <th>Department</th>
-                      <th>Percentage</th>
+                      <th>Departamento</th>
+                      <th>Porcentage</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -143,7 +143,7 @@ export default async function Main() {
                           ({item.totalProducts})  &nbsp;</span>
                         </td>
                         <td>
-                          <span className="text-black font-bold justify-end"> {item.percentage.toFixed(2)}%</span>
+                          <span className="text-black font-bold justify-end"> {item.percentage}%</span>
                         </td>
                       </tr>
                     ))}

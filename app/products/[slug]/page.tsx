@@ -148,7 +148,7 @@ export default async function ProductDetail({ params }: { params: { slug: string
 
           <div className="mt-5">
             <h4 className="text-[16px] font-bold mt-2" >Sobre este producto</h4>
-            <h5 className="text-[14px] font-normal text-neutral-content" >
+            <h5 className="text-[14px] font-normal text-white" >
               {product.description}
             </h5>
           </div>
@@ -189,11 +189,11 @@ export default async function ProductDetail({ params }: { params: { slug: string
             <FaLock color='#949494' fontSize={16} />
             &nbsp; Transacción segura</h4>
           <div className="flex my-0 ">
-            <h4 className="text-neutral-content text-[14px] my-2">Enviado por</h4>
+            <h4 className="text-white text-[14px] my-2">Enviado por</h4>
             <h5 className="font-normal text-[14px] my-2">&nbsp;{product.brand}</h5>
           </div>
           <div className="flex my-0 ">
-            <h4 className="text-neutral-content text-[14px] my-2">Vendedor</h4>
+            <h4 className="text-white text-[14px] my-2">Vendedor</h4>
             <h5 className="font-normal text-[14px] my-2">&nbsp;{product.brand}</h5>
           </div>
           <div className="flex my-2">
@@ -211,7 +211,7 @@ export default async function ProductDetail({ params }: { params: { slug: string
             <br />
             <span >
               <h4 >Try Prime	and start saving today with
-                <span className="text-[14px] text-neutral-content font-normal mt-2 pl-1">
+                <span className="text-[14px] text-white font-normal mt-2 pl-1">
                   <strong>Fast, FREE Delivery</strong>
                 </span>
               </h4>
@@ -268,7 +268,7 @@ export default async function ProductDetail({ params }: { params: { slug: string
             ) : (
               <div className='block '>
                 <p >Califica este producto</p>
-                <p className='text-neutral-400 text-[14px] my-2'>
+                <p className='text-white text-[14px] my-2'>
                  Compartí tus experiencias con otros usuarios
                 </p>
                 <Link href={`/signin?redirect=/product/${product.slug}`} >

@@ -10,27 +10,24 @@ import Uploadfile from "../components/User-navigation/uploadfile"
 import Link from 'next/link';
 import { MdAttachMoney, MdFavorite, MdOutlineChat } from "react-icons/md";
 import { RiCustomerService2Line } from "react-icons/ri";
+
 const menuItems = [
     {
-        title: "Pages",
+        title: "Páginas",
         list: [
             {
-                title: "Customer service",
+                title: "Servicio al cliente",
                 path: "/customer",
                 icon: <RiCustomerService2Line />,
             },
             {
-                title: "Wishlist",
+                title: "Favoritos",
                 path: "/favorite",
                 icon: <MdFavorite />,
             },
+           
             {
-                title: "Chat rooms",
-                path: "/chats",
-                icon: <MdOutlineChat />,
-            },
-            {
-                title: "Orders",
+                title: "Compras",
                 path: "/orders",
                 icon: <MdAttachMoney />,
             },
@@ -59,9 +56,9 @@ export default async function ProfileScreen() {
 
 
     return (
-        <div className="grid md:grid-cols-4 md:gap-5">
+        <div className="grid md:grid-cols-4 md:gap-5 text-white">
             <div className='mx-4 my-5 border-r-[1px] '>
-                <h1 className=" text-xl font-bold text-center">Your Account</h1>
+                <h1 className=" text-xl font-bold text-center">Tu cuenta</h1>
                 <h2 className="font-semibold text-center">&nbsp;{session?.user?.name}</h2>
                 <h2 className=" xl:block text-center font-semibold md:hidden  ">&nbsp;{session?.user?.email} </h2>
 
@@ -88,22 +85,22 @@ export default async function ProfileScreen() {
             </div>
             <div className="md:col-span-3">
                 <UserUpdate session={session} />
-                <div className="my-5 rounded-md">
-                    <h2 className=" text-xl">Latest Transactions</h2>
+                <div className="my-5 rounded-md text-white">
+                    <h2 className=" text-xl">Últimas Transacciones</h2>
                     <table className="table text-center">
                         <thead>
-                            <tr className="bg-base-200">
-                                <th>Product</th>
-                                <th>Buyer</th>
-                                <th>Price</th>
-                                <th>Date</th>
-                                <th>Status</th>
+                            <tr className="bg-black text-white">
+                                <th>Producto</th>
+                                <th>Comprador</th>
+                                <th>Precio</th>
+                                <th>Fecha</th>
+                                <th>Estado</th>
                             </tr>
                         </thead>
                         <tbody>
                             {orders.length === 0 ? (
                                 <tr>
-                                    <td colSpan={5}>No orders found</td>
+                                    <td colSpan={5}>No se encontraron órdenes</td>
                                 </tr>
                             ) : (
                                 orders.map((item: any) => (
@@ -117,17 +114,17 @@ export default async function ProfileScreen() {
                                                 className="rounded-lg max-w-[50px] max-h-[50px] min-h-[50px]"
                                             />
                                         </td>
-                                        <td className='text-neutral-content'>{item.userId}</td>
-                                        <td className='text-bold'>${item.totalAmount.toFixed(2)}</td>
+                                        <td className='text-white'>{item.userId}</td>
+                                        <td className='text-bold'>€{item.totalAmount}</td>
                                         <td>
                                             {new Date(item.createdAt.substring(0, 10)).toLocaleDateString(
-                                                'en-US',
+                                                'es-ES',
                                                 {
                                                     year: 'numeric',
                                                     month: 'long',
                                                     day: 'numeric'
                                                 }
-                                            )};
+                                            )}
                                         </td>
                                         <td>
                                             {item.orderStatus}

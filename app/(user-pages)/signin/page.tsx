@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import axios from 'axios';
 import { useForm } from 'react-hook-form';
 import { signIn, useSession } from 'next-auth/react';
-import { FcGoogle } from "react-icons/fc";
+
 
 export default function Signin() {
     const { data: session } = useSession();
@@ -58,7 +58,7 @@ export default function Signin() {
     return (
         <div className='a_page'>
            <div className='a_container'>
-                <h1 className='text-[21px] font-bold pb-5'>Sign in</h1>
+                <h1 className='text-[21px] font-bold pb-5 text-white'>Identificate</h1>
                 <form onSubmit={handleSubmit(submitHandler)} >
                     <h5>Email</h5>
                     <input
@@ -69,10 +69,10 @@ export default function Signin() {
                         { required: true, pattern: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/ })}
                         aria-invalid={errors.email ? "true" : "false"}
                     />
-                    {errors.email?.type === 'required' && <p className='a_error'> Email is required</p>}
-                    {errors.email?.type === 'pattern' && <p className='a_error'> Invalid email format</p>}
+                    {errors.email?.type === 'required' && <p className='a_error'> El email es requerido</p>}
+                    {errors.email?.type === 'pattern' && <p className='a_error'> El formato de email no es válido</p>}
 
-                    <h5>Password</h5>
+                    <h5>Contraseña</h5>
                     <input
                         className='a_input'
                         id="password"
@@ -80,38 +80,33 @@ export default function Signin() {
                         {...register("password", { required: true, minLength: 6, maxLength: 20 })}
                         aria-invalid={errors.password ? "true" : "false"}
                     />
-                    {errors.password?.type === 'required' && <p className='a_error'> Password is required.</p>}
-                    {errors.password?.type === 'minLength' && <p className='a_error'> Passwords must be at least 6 characters.</p>}
-                    {errors.password?.type === 'maxLength' && <p className='a_error'> Passwords must be up to 20 characters.</p>}
+                    {errors.password?.type === 'required' && <p className='a_error'> La contraseña es requerida.</p>}
+                    {errors.password?.type === 'minLength' && <p className='a_error'> La contraseña debe contener al menos 6 caractéres.</p>}
+                    {errors.password?.type === 'maxLength' && <p className='a_error'> La contraseña no debe superar los 20 caractéres</p>}
 
                     <br /><br />
                     <button className='btn btn-outline btn-primary w-full' type='submit' >Continue</button>
                 </form>
 
-                <div className='a_label'>By continuing, you agree to Milproveedores&apos;s
-                    <a className='text-[#0066c0]'> Conditions of Use </a>
-                    and<a className='text-[#0066c0]'> Privacy Notice</a>
+                <div className='a_label'>Si Ud continua, acepta lo siguiente de Milproveedores&apos;s
+                    <Link href="/terminos" className='text-[#0066c0]'>
+                        Términos y condiciones </Link>
+                    y <Link href="/aviso" className='text-[#0066c0]'> Privacidad</Link>
                 </div>
                 <br />
                 <div className='a_flabel mb-4'>
                     <Link href="/forgot" >
                         <p className='text-primary font-semibold mb-2 hover:text-[#c45500] cursor-pointer' >
-                        Forgot your password?
+                        ¿Olvidaste la contraseña?
                         </p>
                     </Link>
                 </div>
-                <button
-            className="btn btn-primary btn-outline w-full"
-            onClick={() => {
-              signIn("google");
-            }}
-          >
-            <FcGoogle />
-            Sign In with Google
-          </button>
-            <div className='a_divider'>__________ New to Milproveedores? __________</div>   
+          
+          
+          
+            <div className='a_divider'>¿Sos cliente nuevo de Milproveedores? </div>   
                 <Link href="/register" >
-                <button className='a_regbtn'>Create your Milproveedores account </button>
+                <button className='a_regbtn'>Create tu cuenta aquí </button>
                 </Link>
             </div>
         </div>

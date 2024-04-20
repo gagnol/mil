@@ -18,7 +18,7 @@ import React from 'react'
     }
     return (
         <div className="max-w-screen-xl mx-auto px-6 gap-10 py-4 text-white">
-            <header className="relative flex justify-between h-[60px] text-[16px] bg-neutral-800
+            <header className="relative flex justify-between h-[60px] text-[16px] bg-black
             p-5 m-5">
                 <div className="cs-title">
                     <a href="/hz/contact-us/foresight/hubgateway">Servicio al cliente</a>

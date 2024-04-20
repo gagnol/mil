@@ -27,8 +27,7 @@ function Forgot() {
       if (error instanceof AxiosError) {
         const errorMessage = error.response?.data.message;
         setError(errorMessage);
-      }
-    }
+      }}
   };
 
   return (

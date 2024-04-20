@@ -15,7 +15,7 @@ const FavoritePage: React.FC = () => {
       {favoriteData.length > 0 ? (
         <div className="bg-base p-4 rounded-lg">
           <div className="flex items-center justify-between border-b-[1px] pb-1">
-            <p className="text-2xl font-semibold text-neutral-300">
+            <p className="text-2xl font-semibold text-white">
               Listado de favoritos 
             </p>
             
@@ -32,7 +32,7 @@ const FavoritePage: React.FC = () => {
           </div>
         </div>
       ) : (
-        <div className="bg-base h-96 flex flex-col items-center  border-b-gray-400
+        <div className="bg-black text-white h-96 flex flex-col items-center  border-b-gray-400
         justify-center py-5 rounded-lg shadow-lg">
           <h1>Nada disponible en tu lista de favoritos</h1>
           <Link href="/">

@@ -60,14 +60,14 @@ function Validate() {
         <form onSubmit={handleSubmit} >
           {error && <div className="bg-red-500 text-white p-2 mb-2">{error}</div>}
 
-          <h1 className="text-[21px] font-bold pb-5">Verification required</h1>
+          <h1 className="text-[21px] font-bold pb-5">Verificación requerida</h1>
           <div className='a_label mb-2'>
-            To continue, complete this verification step.
-            We have sent a One Time Password (OTP) to the email
-            <a className='text-primary px-1 font-semibold'>{userInfo.email} </a>
-            <p>Please enter it below.</p>
+            Para continuar, complete este paso de verificación.
+            Nosotros le enviámos un One Time Password (OTP) al email
+               <a className='text-primary px-1 font-semibold'>{userInfo.email} </a>
+            <p>por favor ingréselo .</p>
           </div>
-          <label className="">Enter OTP</label>
+          <label className="">Ingresar OTP</label>
           <input
             type="text"
             placeholder="OTP"
@@ -80,12 +80,12 @@ function Validate() {
           </button>
         </form>
         <div className='a_label'>
-          {counter === 0 ? (<><p className='text-[16px] text-red-600'>Your OTP expired</p></>) :
-            (<a className='text-[16px]'> Your OTP expires in {formatTime(counter)}</a>)}
+          {counter === 0 ? (<><p className='text-[16px] text-red-600'>Su OTP expiró</p></>) :
+            (<a className='text-[16px]'> Su OTP expirará en {formatTime(counter)}</a>)}
         </div>
         <br />
         <div className='a_flabel'>
-          I need more help
+          Necesito más ayuda
         </div>
       </div>
     </div>

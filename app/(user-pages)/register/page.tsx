@@ -39,10 +39,10 @@ function Signup() {
     <div className='a_page'>
 
       <div className='a_container'>
-        <h1 className='text-[21px] font-bold pb-5'>Create account</h1>
+        <h1 className='text-[21px] font-bold pb-5 text-white'>Create una cuenta</h1>
         <form onSubmit={handleSubmit}>
           {error && <div className="bg-red-500 text-white p-2 mb-2">{error}</div>}
-          <label className="text-slate-300">Fullname:</label>
+          <label className="text-white">Tu nombre completo:</label>
           <input
             type="text"
             placeholder="Fullname"
@@ -50,7 +50,7 @@ function Signup() {
             name="name"
           />
 
-          <label className="text-slate-300">Email:</label>
+          <label className="text-slate-300">Correo Electrónico:</label>
           <input
             type="email"
             placeholder="Email"
@@ -58,7 +58,7 @@ function Signup() {
             name="email"
           />
 
-          <label className="text-slate-300">Password:</label>
+          <label className="text-slate-300">Contraseña:</label>
           <input
             type="password"
             placeholder="Password"
@@ -67,19 +67,20 @@ function Signup() {
           />
 
           <button className="btn btn-primary btn-outline w-full mt-5">
-            Signup
+            Regsitrate
           </button>
         </form>
         <br />
-        <div className='a_label'>By continuing, you agree to Milproveedores&apos;s
-          <a className='text-[#0066c0]'> Conditions of Use </a>and<a className='text-[#0066c0]'> Privacy Notice</a>
-        </div>
-        <br />
-        <div className='a_divider'>______________________________________</div>
+        <div className='a_label'>Si Ud continua, acepta lo siguiente de Milproveedores&apos;s
+                    <Link href="/terminos" className='text-[#0066c0]'>
+                        Términos y condiciones </Link>
+                    y <Link href="/aviso" className='text-[#0066c0]'> Privacidad</Link>
+                </div> <br />
+       
         <div className='a_label'>
-          Already have an account?&nbsp;
+          ¿Ya tiene una cuenta?&nbsp;
           <Link href="/signin" >
-            <span className='text-primary font-semibol cursor-pointer'> Sign in</span>
+            <span className='text-primary font-semibol cursor-pointer'> Identificate</span>
           </Link>
         </div>
       </div>
